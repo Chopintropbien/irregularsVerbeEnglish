@@ -53,8 +53,8 @@ class AskInAppPurschase: UIViewController {
     
     func setText(){
         titleLabel.text = Localization("Do you want to learn even more verbs?")
-        explainationBuy1LevelLabel.text = Localization("")
-        explainationBuyAllLevelLabel.text = Localization("")
+        explainationBuy1LevelLabel.text = Localization("Full access to all verbs in ") + self.level.rawValue + Localization(" level")
+        explainationBuyAllLevelLabel.text = Localization("Full access to ALL verbs in ALL level")
     }
     
     
@@ -63,6 +63,7 @@ class AskInAppPurschase: UIViewController {
         self.upperView.isHidden = false
         self.containerView.isHidden = true
         self.canNotBuyView.isHidden = true
+        setText()
         self.animation(view: view)
 
     }
@@ -197,7 +198,7 @@ class AskInAppPurschase: UIViewController {
     }
     
     func displayIfNotPurchased(products: [SKProduct], internetConnection: Bool) {
-        if((form == Form.aiea || letter == LetterButton.A)){
+        if((form == Form.AAA || letter == LetterButton.AB)){
             // do not display
             self.upperView.isHidden = true
         }

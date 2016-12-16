@@ -14,13 +14,13 @@ enum Lang: String{
     case fr = "fr"
     case en = "en"
     case es = "es"
-    case ru = "ru"
-    case zh = "zh-Hans" // chinees trad
-    case ar = "ar"
-    case it = "it"
-    case ja = "ja"
+    //case ru = "ru"
+    //case zh = "zh-Hans" // chinees trad
+    //case ar = "ar"
+    //case it = "it"
+    //case ja = "ja"
     
-    static let allValues = [DeviceLanguage, fr, en, es, ru, zh, ar, it, ja]
+    static let allValues = [DeviceLanguage, fr, en, es/*, ru, zh, ar, it, ja*/]
 }
 
 let kNotificationLanguageChanged: String = "kNotificationLanguageChanged";

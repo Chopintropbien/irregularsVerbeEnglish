@@ -10,11 +10,11 @@ import Foundation
 
 public struct Products {
     
-    public static let A2ProductId = "Irregular.german.verbs.accessA2Level"
-    public static let B1ProductId = "Irregular.german.verbs.accessB1Level"
-    public static let B2ProductId = "Irregular.german.verbs.accessB2Level"
-    public static let C1ProductId = "Irregular.german.verbs.accessC1Level"
-    public static let AllProductId = "Irregular.german.verbs.accessAllLevel"
+    public static let A2ProductId = "Irregular.english.verbs.accessA2Level"
+    public static let B1ProductId = "Irregular.english.verbs.accessB1Level"
+    public static let B2ProductId = "Irregular.english.verbs.accessB2Level"
+    public static let C1ProductId = "Irregular.english.verbs.accessC1Level"
+    public static let AllProductId = "Irregular.english.verbs.accessAllLevel"
     
     fileprivate static let productIdentifiers: Set<ProductIdentifier> =
         [Products.A2ProductId, Products.AllProductId, Products.B1ProductId, Products.B2ProductId, Products.C1ProductId]
@@ -24,7 +24,7 @@ public struct Products {
     public static func nbProduct() -> Int{
         return productIdentifiers.count
     }
-    public static func productId(level: Level) -> String{
+    static func productId(level: Level) -> String{
         switch(level){
         case Level.A2:
             return A2ProductId

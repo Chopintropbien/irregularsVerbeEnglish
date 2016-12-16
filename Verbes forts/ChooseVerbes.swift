@@ -22,35 +22,30 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     @IBOutlet weak var alphabeticOrderLabel: UILabel!
     
     
-    @IBOutlet weak var aieaButton: UIButton!
-    @IBOutlet weak var auaButton: UIButton!
-    @IBOutlet weak var eaeButton: UIButton!
-    @IBOutlet weak var eaoButton: UIButton!
-    @IBOutlet weak var eiieieButton: UIButton!
-    @IBOutlet weak var eiiiButton: UIButton!
-    @IBOutlet weak var iaoButton: UIButton!
-    @IBOutlet weak var iauButton: UIButton!
-    @IBOutlet weak var eiooButton: UIButton!
-
-    @IBOutlet weak var unclassable: UIButton!
-    @IBOutlet weak var weakIregular: UIButton!
+    @IBOutlet weak var AAAButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var ABAButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var ABBButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var ABAnButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var ABBnButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var ABCButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var iauButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var enUsButton: CategoryVerbeButtonWhite!
     
-    @IBOutlet weak var AButton: UIButton!
-    @IBOutlet weak var BButton: UIButton!
-    @IBOutlet weak var DEButton: UIButton!
-    @IBOutlet weak var FButton: UIButton!
-    @IBOutlet weak var GButton: UIButton!
     
-    @IBOutlet weak var HKButton: UIButton!
-    @IBOutlet weak var LMButton: UIButton!
-    @IBOutlet weak var NPQButton: UIButton!
-    @IBOutlet weak var RButton: UIButton!
-    @IBOutlet weak var S1Button: UIButton!
-    @IBOutlet weak var S2Button: UIButton!
-    @IBOutlet weak var S3Button: UIButton!
-    @IBOutlet weak var TButton: UIButton!
-    @IBOutlet weak var UVButton: UIButton!
-    @IBOutlet weak var WZButton: UIButton!
+    @IBOutlet weak var ABButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var CDButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var EFButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var GHIButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var JKLButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var MButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var OButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var PQButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var RButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var S1Button: CategoryVerbeButtonWhite!
+    @IBOutlet weak var S2Button: CategoryVerbeButtonWhite!
+    @IBOutlet weak var TButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var UButton: CategoryVerbeButtonWhite!
+    @IBOutlet weak var WButton: CategoryVerbeButtonWhite!
     
 
 
@@ -68,26 +63,22 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         self.formOrderLabel.text = Localization("Classified by form")
         self.alphabeticOrderLabel.text = Localization("Classified by alphabetical order")
         
-        unclassable.setTitle(Localization("unclassifiable"), for: UIControlState())
-        weakIregular.setTitle(Localization("weak-irregular-masculin"), for: UIControlState())
         
-
         
-//        let screenHeight = self.view.bounds.height
+        //        let screenHeight = self.view.bounds.height
         let screenWidth = self.view.bounds.width
         
         // 1th label
         let labelHeight = height(65)
-        let randomOrderLabelMarginTop = height(180)
+        let randomOrderLabelMarginTop = height(190)
         randomOrderLabel.frame = CGRect(x: 0, y: randomOrderLabelMarginTop, width: screenWidth, height: labelHeight)
-    
         
         // Random Button
-        let buttonHeight = height(70)
-        let randomOrderButtonMarginTop = height(25)
+        let buttonHeight = height(75)
+        let randomOrderButtonMarginTop = height(20)
         let randomOrderButtonY = randomOrderLabelMarginTop + randomOrderButtonMarginTop + labelHeight
         
-        let randomOrderButtonWidth = width(275)
+        let randomOrderButtonWidth = width(365)
         let randomOrderButtonX = (screenWidth - randomOrderButtonWidth)*0.5
         let randomOrderButtonHeight = buttonHeight + height(25)
         randomOrderButton.frame = CGRect(x: randomOrderButtonX, y: randomOrderButtonY, width: randomOrderButtonWidth, height: randomOrderButtonHeight)
@@ -102,7 +93,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         
         // All the form button
         let row1MarginTop = height(25)
-        let marginBottomBetweenTwo = height(14)
+        let marginBottomBetweenTwo = height(20)
         
         let formWidth = width(203)
         let formMarginToBorder = width(43)
@@ -112,44 +103,32 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         let row1FormY = formOrderLabelY + labelHeight + row1MarginTop
         let row2FormY = row1FormY + buttonHeight + marginBottomBetweenTwo
         let row3FormY = row2FormY + buttonHeight + marginBottomBetweenTwo
-        let row4FormY = row3FormY + buttonHeight + marginBottomBetweenTwo
         
         let column1FormY = formMarginToBorder
         let column2FormY = column1FormY + formWidth + formMarginRightBetweenTwo
         let column3FormY = column2FormY + formWidth + formMarginRightBetweenTwo
         
         
-        aieaButton.frame = CGRect(x: column1FormY, y: row1FormY, width: formWidth, height: buttonHeight)
-        auaButton.frame = CGRect(x: column2FormY, y: row1FormY, width: formWidth, height: buttonHeight)
-        eaeButton.frame = CGRect(x: column3FormY, y: row1FormY, width: formWidth, height: buttonHeight)
-        
-        eaoButton.frame = CGRect(x: column1FormY, y: row2FormY, width: formWidth, height: buttonHeight)
-        eiieieButton.frame = CGRect(x: column2FormY, y: row2FormY, width: formWidth, height: buttonHeight)
-        eiiiButton.frame = CGRect(x: column3FormY, y: row2FormY, width: formWidth, height: buttonHeight)
+        AAAButton.frame = CGRect(x: column1FormY, y: row1FormY, width: formWidth, height: buttonHeight)
+        ABBButton.frame = CGRect(x: column2FormY, y: row1FormY, width: formWidth, height: buttonHeight)
+        ABAButton.frame = CGRect(x: column3FormY, y: row1FormY, width: formWidth, height: buttonHeight)
         
         
-        // desactivate this button for B1-2 because a lack of verb in this cathegory
-        if(level == Level.B1 || level == Level.B2){
-            iaoButton.isHidden = true
-            iauButton.frame = CGRect(x: column1FormY + width(116), y: row3FormY, width: formWidth, height: buttonHeight)
-            eiooButton.frame = CGRect(x: column2FormY + width(116), y: row3FormY, width: formWidth, height: buttonHeight)
-        }
-        else{
-            iaoButton.frame = CGRect(x: column1FormY, y: row3FormY, width: formWidth, height: buttonHeight)
-            iauButton.frame = CGRect(x: column2FormY, y: row3FormY, width: formWidth, height: buttonHeight)
-            eiooButton.frame = CGRect(x: column3FormY, y: row3FormY, width: formWidth, height: buttonHeight)
-        }
+        ABAnButton.frame = CGRect(x: column1FormY, y: row2FormY, width: formWidth, height: buttonHeight)
+        ABBnButton.frame = CGRect(x: column2FormY, y: row2FormY, width: formWidth, height: buttonHeight)
+        ABCButton.frame = CGRect(x: column3FormY, y: row2FormY, width: formWidth, height: buttonHeight)
         
-        // special enplacement for "unclassable" and "weakIregular"
-        let formBigWidth = width(250)
-        let formbigMarginToBorder = width(116)
-        unclassable.frame = CGRect(x: formbigMarginToBorder, y: row4FormY, width: formBigWidth, height: buttonHeight)
-        weakIregular.frame = CGRect(x: formbigMarginToBorder + formBigWidth + formMarginRightBetweenTwo, y: row4FormY, width: formBigWidth, height: buttonHeight)
+        
+        enUsButton.frame = CGRect(x: column1FormY + width(116), y: row3FormY, width: formWidth, height: buttonHeight)
+        iauButton.frame = CGRect(x: column2FormY + width(116), y: row3FormY, width: formWidth, height: buttonHeight)
+        
+        
+        
         
         
         
         // 3th label
-        let alphabeticOrderLabelLabelY = row4FormY + buttonHeight + formOrderLabelMarginTop
+        let alphabeticOrderLabelLabelY = row3FormY + buttonHeight + formOrderLabelMarginTop
         alphabeticOrderLabel.frame = CGRect(x: 0, y: alphabeticOrderLabelLabelY, width: screenWidth, height: labelHeight)
         
         
@@ -171,26 +150,39 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
         let column4LetterY = column3LetterY + letterWidth + letterMarginRightBetweenTwo
         
         
-        AButton.frame = CGRect(x: column1LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
-        BButton.frame = CGRect(x: column2LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
-        DEButton.frame = CGRect(x: column3LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
-        FButton.frame = CGRect(x: column4LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
+        ABButton.frame = CGRect(x: column1LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
+        CDButton.frame = CGRect(x: column2LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
+        EFButton.frame = CGRect(x: column3LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
+        GHIButton.frame = CGRect(x: column4LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
         
-        GButton.frame = CGRect(x: column1LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
-        HKButton.frame = CGRect(x: column2LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
-        LMButton.frame = CGRect(x: column3LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
-        NPQButton.frame = CGRect(x: column4LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
         
-        RButton.frame = CGRect(x: column1LetterY, y: row3LetterY, width: letterWidth, height: buttonHeight)
-        S1Button.frame = CGRect(x: column2LetterY, y: row3LetterY, width: letterWidth, height: buttonHeight)
-        S2Button.frame = CGRect(x: column3LetterY, y: row3LetterY, width: letterWidth, height: buttonHeight)
-        S3Button.frame = CGRect(x: column4LetterY, y: row3LetterY, width: letterWidth, height: buttonHeight)
         
         let letterbigMarginToBorder = width(90)
+        // do not display Button O
+        if(level == Level.A2){
+            OButton.isHidden = true
+            
+            JKLButton.frame = CGRect(x: column1LetterY + letterbigMarginToBorder, y: row2LetterY, width: letterWidth, height: buttonHeight)
+            MButton.frame = CGRect(x: column2LetterY + letterbigMarginToBorder, y: row2LetterY, width: letterWidth, height: buttonHeight)
+            PQButton.frame = CGRect(x: column3LetterY + letterbigMarginToBorder, y: row2LetterY, width: letterWidth, height: buttonHeight)
+        }
+        else{
+            JKLButton.frame = CGRect(x: column1LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
+            MButton.frame = CGRect(x: column2LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
+            OButton.frame = CGRect(x: column3LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
+            PQButton.frame = CGRect(x: column4LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
+        }
+        
+        
+        RButton.frame = CGRect(x: column1LetterY + letterbigMarginToBorder, y: row3LetterY, width: letterWidth, height: buttonHeight)
+        S1Button.frame = CGRect(x: column2LetterY + letterbigMarginToBorder, y: row3LetterY, width: letterWidth, height: buttonHeight)
+        S2Button.frame = CGRect(x: column3LetterY + letterbigMarginToBorder, y: row3LetterY, width: letterWidth, height: buttonHeight)
+        
         TButton.frame = CGRect(x: column1LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
-        UVButton.frame = CGRect(x: column2LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
-        WZButton.frame = CGRect(x: column3LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
-
+        UButton.frame = CGRect(x: column2LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
+        WButton.frame = CGRect(x: column3LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
+        
+        
     }
 
     
@@ -203,38 +195,36 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             
             let nbVerbeRandom = 15
             let headerTextRandom: String = Localization("Try to remember this ") + String(nbVerbeRandom) + Localization(" verbes")
-            let unclassable: String =  Localization("unclassifiable")
-            let weakIregular: String = Localization("weak-irregular-feminin")
             rev.level = level
             
             
             func setTextInStringType(_ form: Form){
                 switch form {
-                case Form.weak:
-                    rev.headerText = Localization("Here are german irregular verbs by form: weak-irregular")
-                case Form.undefine:
-                    rev.headerText = Localization("Here are german irregular verbs by form: unclassifiable")
-                    
-                default:
-                    if(GetLanguage() == Lang.ar){
-                       rev.headerText = form.rawValue + Localization("Here are german irregular verbs by form: ")
-                    }
-                    else{
-                        rev.headerText = Localization("Here are german irregular verbs by form: ") + form.rawValue
-                    }
+                case Form.AAA:
+                    rev.headerText = Localization("These are irregular verbs  with no changes: A-A–A")
+                case Form.ABB:
+                    rev.headerText = Localization("These are irregular verbs with the same Past and Past Participle tense: A-B-B")
+                case Form.ABA:
+                    rev.headerText = Localization("These are irregular verbs with the same Present and Past Participle tense: A-B-A")
+                case Form.ABAn:
+                    rev.headerText = Localization("Here are irregular verbs where the Past Participle is the same as the Present but with an ”n” or ”en” at the end: A-B-An")
+                case Form.ABBn:
+                    rev.headerText = Localization("Here are irregular verbs where the Past Participle is the same as the Preterit but with an ”n” or ”en” at the end: A-B-Bn")
+                case Form.iau:
+                    rev.headerText = Localization("These are irregular verbs with “i” for the Present, ”a” for the Preterit and “u” for the Past Participle: i-a-u")
+                case Form.ABC:
+                    rev.headerText = Localization("These are irregular verbs which are different from each other: A-B-C")
+                case Form.enUs:
+                    rev.headerText = Localization("These are irregular verbs with different spellings in British and American English: eu/us")
                 }
+                
                 // set form
                 rev.form = form
                 setStaticButton()
             }
             
             func setTextInLetterType(_ letter: LetterButton){
-                if(GetLanguage() == Lang.ar){
-                    rev.headerText = letter.rawValue.uppercased() + Localization("Here are german irregular verbs who begins by: ")
-                }
-                else{
-                  rev.headerText = Localization("Here are german irregular verbs who begins by: ") + letter.rawValue.uppercased()
-                }
+                rev.headerText = Localization("Here are irregular verbs who begins by: ") + letter.rawValue.uppercased()
                 
                 // set letter
                 rev.letter = letter
@@ -343,30 +333,30 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             
             if let id = segue.identifier{
                 switch id {
-                case LetterButton.A.rawValue:
-                    rev.verbes = filterVerbeByLetter(LetterButton.A)
-                    setTextInLetterType(LetterButton.A)
-                case LetterButton.B.rawValue:
-                    rev.verbes = filterVerbeByLetter(LetterButton.B)
-                    setTextInLetterType(LetterButton.B)
-                case LetterButton.DE.rawValue:
-                    rev.verbes = filterVerbeByLetter(LetterButton.DE)
-                    setTextInLetterType(LetterButton.DE)
-                case LetterButton.F.rawValue:
-                    rev.verbes = filterVerbeByLetter(LetterButton.F)
-                    setTextInLetterType(LetterButton.F)
-                case LetterButton.G.rawValue:
-                    rev.verbes = filterVerbeByLetter(LetterButton.G)
-                    setTextInLetterType(LetterButton.G)
-                case LetterButton.HK.rawValue:
-                    rev.verbes = filterVerbeByLetter(LetterButton.HK)
-                    setTextInLetterType(LetterButton.HK)
-                case LetterButton.LM.rawValue:
-                    rev.verbes = filterVerbeByLetter(LetterButton.LM)
-                    setTextInLetterType(LetterButton.LM)
-                case LetterButton.NPQ.rawValue:
-                    rev.verbes = filterVerbeByLetter(LetterButton.NPQ)
-                    setTextInLetterType(LetterButton.NPQ)
+                case LetterButton.AB.rawValue:
+                    rev.verbes = filterVerbeByLetter(LetterButton.AB)
+                    setTextInLetterType(LetterButton.AB)
+                case LetterButton.CD.rawValue:
+                    rev.verbes = filterVerbeByLetter(LetterButton.CD)
+                    setTextInLetterType(LetterButton.CD)
+                case LetterButton.EF.rawValue:
+                    rev.verbes = filterVerbeByLetter(LetterButton.EF)
+                    setTextInLetterType(LetterButton.EF)
+                case LetterButton.GHI.rawValue:
+                    rev.verbes = filterVerbeByLetter(LetterButton.GHI)
+                    setTextInLetterType(LetterButton.GHI)
+                case LetterButton.JKL.rawValue:
+                    rev.verbes = filterVerbeByLetter(LetterButton.JKL)
+                    setTextInLetterType(LetterButton.JKL)
+                case LetterButton.M.rawValue:
+                    rev.verbes = filterVerbeByLetter(LetterButton.M)
+                    setTextInLetterType(LetterButton.M)
+                case LetterButton.O.rawValue:
+                    rev.verbes = filterVerbeByLetter(LetterButton.O)
+                    setTextInLetterType(LetterButton.O)
+                case LetterButton.PQ.rawValue:
+                    rev.verbes = filterVerbeByLetter(LetterButton.PQ)
+                    setTextInLetterType(LetterButton.PQ)
                 case LetterButton.R.rawValue:
                     rev.verbes = filterVerbeByLetter(LetterButton.R)
                     setTextInLetterType(LetterButton.R)
@@ -376,52 +366,43 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                 case LetterButton.S2.rawValue:
                     rev.verbes = filterVerbeByLetter(LetterButton.S2)
                     setTextInLetterType(LetterButton.S2)
-                case LetterButton.S3.rawValue:
-                    rev.verbes = filterVerbeByLetter(LetterButton.S3)
-                    setTextInLetterType(LetterButton.S3)
                 case LetterButton.T.rawValue:
                     rev.verbes = filterVerbeByLetter(LetterButton.T)
                     setTextInLetterType(LetterButton.T)
-                case LetterButton.UV.rawValue:
-                    rev.verbes = filterVerbeByLetter(LetterButton.UV)
-                    setTextInLetterType(LetterButton.UV)
-                case LetterButton.WZ.rawValue:
-                    rev.verbes = filterVerbeByLetter(LetterButton.WZ)
-                    setTextInLetterType(LetterButton.WZ)
-                
-                case Form.aiea.rawValue:
-                    rev.verbes = filterVerbeByForm(Form.aiea)
-                    setTextInStringType(Form.aiea)
-                case Form.aua.rawValue:
-                    rev.verbes = filterVerbeByForm(Form.aua)
-                    setTextInStringType(Form.aua)
-                case Form.eae.rawValue:
-                    rev.verbes = filterVerbeByForm(Form.eae)
-                    setTextInStringType(Form.eae)
-                case Form.eao.rawValue:
-                    rev.verbes = filterVerbeByForm(Form.eao)
-                    setTextInStringType(Form.eao)
-                case Form.eiieie.rawValue:
-                    rev.verbes = filterVerbeByForm(Form.eiieie)
-                    setTextInStringType(Form.eiieie)
-                case Form.eiii.rawValue:
-                    rev.verbes = filterVerbeByForm(Form.eiii)
-                    setTextInStringType(Form.eiii)
-                case Form.iao.rawValue:
-                    rev.verbes = filterVerbeByForm(Form.iao)
-                    setTextInStringType(Form.iao)
+                case LetterButton.U.rawValue:
+                    rev.verbes = filterVerbeByLetter(LetterButton.U)
+                    setTextInLetterType(LetterButton.U)
+                case LetterButton.W.rawValue:
+                    rev.verbes = filterVerbeByLetter(LetterButton.W)
+                    setTextInLetterType(LetterButton.W)
+                    
+                    
+                case Form.AAA.rawValue:
+                    rev.verbes = filterVerbeByForm(Form.AAA)
+                    setTextInStringType(Form.AAA)
+                case Form.ABB.rawValue:
+                    rev.verbes = filterVerbeByForm(Form.ABB)
+                    setTextInStringType(Form.ABB)
+                case Form.ABA.rawValue:
+                    rev.verbes = filterVerbeByForm(Form.ABA)
+                    setTextInStringType(Form.ABA)
+                case Form.ABBn.rawValue:
+                    rev.verbes = filterVerbeByForm(Form.ABBn)
+                    setTextInStringType(Form.ABBn)
+                case Form.ABAn.rawValue:
+                    rev.verbes = filterVerbeByForm(Form.ABAn)
+                    setTextInStringType(Form.ABAn)
+                case Form.ABC.rawValue:
+                    rev.verbes = filterVerbeByForm(Form.ABC)
+                    setTextInStringType(Form.ABC)
                 case Form.iau.rawValue:
                     rev.verbes = filterVerbeByForm(Form.iau)
                     setTextInStringType(Form.iau)
-                case Form.ieoo.rawValue:
-                    rev.verbes = filterVerbeByForm(Form.ieoo)
-                    setTextInStringType(Form.ieoo)
-                case Form.undefine.rawValue:
-                    rev.verbes = filterVerbeByForm(Form.undefine)
-                    setTextInStringType(Form.undefine)
-                case Form.weak.rawValue:
-                    rev.verbes = filterVerbeByForm(Form.weak)
-                    setTextInStringType(Form.weak)
+                case Form.enUs.rawValue:
+                    rev.verbes = filterVerbeByForm(Form.enUs)
+                    setTextInStringType(Form.enUs)
+                    
+                    
                 case "random":
                     rev.verbes = []
                     for _ in 1...nbVerbeRandom{
@@ -433,6 +414,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                     rev.verbes = []
                 }
             }
+
         }
     }
     

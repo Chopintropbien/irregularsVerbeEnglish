@@ -35,7 +35,6 @@ class RevisionVerbes: UIViewController {
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var translationLabel: UILabel!
     @IBOutlet weak var infinitifLabel: UILabel!
-    @IBOutlet weak var presentLabel: UILabel!
     @IBOutlet weak var preteritLabel: UILabel!
     @IBOutlet weak var parfaitLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
@@ -74,8 +73,8 @@ class RevisionVerbes: UIViewController {
     
     var formatAudio = "mp3"
     var nameAudioFile = String()
-    var audioURL = URL(fileURLWithPath: Bundle.main.path(forResource: "anbieten", ofType: "mp3")!)
-    var audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "anbieten", ofType: "mp3")!), fileTypeHint: nil) // Grrrrrrr!!!!! Pourquoi???? audioPlayer.stop()
+    var audioURL = URL(fileURLWithPath: Bundle.main.path(forResource: "be", ofType: "mp3")!)
+    var audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "be", ofType: "mp3")!), fileTypeHint: nil) // Grrrrrrr!!!!! Pourquoi???? audioPlayer.stop()
     
     
     override func viewDidLoad() {
@@ -104,7 +103,7 @@ class RevisionVerbes: UIViewController {
         // explanation
         let headerLabelMarginTop = height(190)
         let headerLabelHeight = height(98)
-        let headerLabelMarginRight = width(100)
+        let headerLabelMarginRight = width(10)
         headerLabel.frame = CGRect(x: headerLabelMarginRight, y: headerLabelMarginTop, width: screenWidth - headerLabelMarginRight*2, height: headerLabelHeight)
         
         // Translation
@@ -117,7 +116,7 @@ class RevisionVerbes: UIViewController {
         
         
         
-
+        
         // Images and button for return the carte
         let revealedImageMarginTop = height(20)
         let revealedImageY = translationLabelY + revealedImageMarginTop + translationLabelHeight
@@ -137,42 +136,36 @@ class RevisionVerbes: UIViewController {
         let verbeMarginRight = verbeInsideImgWidth + revealedImageMarginRight
         verbeWidth = revealedImageWidth - verbeInsideImgWidth*2
         let verbeHeight = height(70)
-        let verbeMarginTop = height(30)
+        let verbeMarginTop = height(55)
         
         
         // infinitif
-        infinitifLabelY = height(110) + revealedImageY
+        infinitifLabelY = height(130) + revealedImageY
         infinitifLabelheight = height(100)
         resizeInfinitifLabel()
         infinitifLabel.textColor = UIColor.white
-        infinitifLabel.font = UIFont(name: "Avenir-Black", size: 27)
+        infinitifLabel.font = UIFont(name: "Avenir-Black", size: 29)
         infinitifLabel.textAlignment = .center
         infinitifLabel.layer.cornerRadius = 14
         infinitifLabel.layer.borderWidth = 2
         infinitifLabel.layer.borderColor = UIColor.white.cgColor
         
-        // present
-        let presentLabelMarginTop = height(45)
-        let presentLabelY = infinitifLabelY + infinitifLabelheight + presentLabelMarginTop
-        presentLabel.frame = CGRect(x: verbeMarginRight, y: presentLabelY, width: verbeWidth, height: verbeHeight)
-        presentLabel.textColor = cream
-        presentLabel.font = UIFont(name: "Avenir-Heavy", size: 22)
-        presentLabel.textAlignment = .center
+        
         
         // preterit
-        let preteritLabelY = presentLabelY + verbeHeight + verbeMarginTop
+        let preteritLabelY = infinitifLabelY + infinitifLabelheight + verbeMarginTop + height(0)
         preteritLabel.frame = CGRect(x: verbeMarginRight, y: preteritLabelY, width: verbeWidth, height: verbeHeight)
-        preteritLabel.textColor = presentLabel.textColor
-        preteritLabel.font = presentLabel.font
-        presentLabel.textAlignment = presentLabel.textAlignment
+        preteritLabel.textColor = cream
+        preteritLabel.font = UIFont(name: "Avenir-Heavy", size: 24)
+        preteritLabel.textAlignment = .center
         
         
         // parfait
         let parfaitLabelY = preteritLabelY + verbeHeight + verbeMarginTop
         parfaitLabel.frame = CGRect(x: verbeMarginRight, y: parfaitLabelY, width: verbeWidth, height: verbeHeight)
-        parfaitLabel.textColor = presentLabel.textColor
-        parfaitLabel.font = presentLabel.font
-        parfaitLabel.textAlignment = presentLabel.textAlignment
+        parfaitLabel.textColor = preteritLabel.textColor
+        parfaitLabel.font = preteritLabel.font
+        parfaitLabel.textAlignment = preteritLabel.textAlignment
         
         
         // nextButton
@@ -203,7 +196,6 @@ class RevisionVerbes: UIViewController {
     func initVerbe(){
         translationLabel.text = verbes[cursor].translation(GetLanguage())
         infinitifLabel.text = verbes[cursor].infinitf()
-        presentLabel.text = verbes[cursor].present()
         preteritLabel.text = verbes[cursor].preterit()
         parfaitLabel.text = verbes[cursor].parfait()
         
@@ -310,13 +302,5 @@ class RevisionVerbes: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 }

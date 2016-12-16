@@ -12,7 +12,7 @@ import UIKit
 var sounds = true
 
 
-let pink = UIColor(red: 246/255.0, green: 47/255.0, blue: 94/255.0, alpha: 1)
+let pink = UIColor(red: 57/255.0, green: 157/255.0, blue: 235/255.0, alpha: 1)
 let fontColor = UIColor(red: 46/255.0, green: 46/255.0, blue: 46/255.0, alpha: 1)
 let fontColorLight = UIColor(red: 60/255.0, green: 60/255.0, blue: 60/255.0, alpha: 1)
 let darkGray = UIColor(red: 100/255.0, green: 100/255.0, blue: 100/255.0, alpha: 1)

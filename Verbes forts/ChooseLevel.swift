@@ -76,9 +76,6 @@ class ChooseLevel: UIViewController, ENSideMenuDelegate {
     
     
     
-    
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cv = segue.destination as? ChooseVerbes{
             if let id = segue.identifier{
