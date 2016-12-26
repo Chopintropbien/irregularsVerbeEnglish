@@ -73,6 +73,7 @@
 
 /* Voici les verbes irregulier commençant par */
 "Here are irregular verbs who begins by: " = "Это английские глаголы на букву: ";
+"Here are irregular verbs who begins by: Part2" = "";
 
 /* These are irregular verbs  with no changes: A - A – A */
 "These are irregular verbs  with no changes: A-A–A" = "Это непавильные глаголы без изменений: А–А–А";
@@ -95,8 +96,8 @@
 /*These are irregular verbs which are different from each other: A-B-C*/
 "These are irregular verbs which are different from each other: A-B-C" = "Это неправильные глаголы с разными формами: A-B-C";
 
-/*These are irregular verbs with different spellings in British and American English: eu/us*/
-"These are irregular verbs with different spellings in British and American English: eu/us" = "Это непавильные глаголы с отлчиями в произношение на Британском английском и на Американском английском: бр/сша";
+/*These are irregular verbs with different spellings in British and American English: gb/us*/
+"These are irregular verbs with different spellings in British and American English: gb/us" = "Это непавильные глаголы с отлчиями в произношение на Британском английском и на Американском английском: бр/сша";
 
 /*eu/us*/
-"eu/us" = "бр/сша";
+"gb/us" = "бр/сша";

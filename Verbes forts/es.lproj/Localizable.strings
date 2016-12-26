@@ -75,7 +75,7 @@
 /*specific english app*/
 
 /* Voici les verbes forts allemand commençant par */
-"Here are irregular verbs who begins by: " = "Aquí tienes los verbos irregulares en alemán que empiezan por la letra: ";
+"Here are irregular verbs who begins by: " = "Aquí tienes los verbos irregulares que empiezan por la letra: ";
 "Here are irregular verbs who begins by: Part2" = "";
 
 /* These are irregular verbs  with no changes: A - A – A */
@@ -99,5 +99,5 @@
 /*These are irregular verbs which are different from each other: A-B-C*/
 "These are irregular verbs which are different from each other: A-B-C" = "Aquí tienes verbos irregulares en inglés donde las tres formas varían: A-B-C";
 
-/*These are irregular verbs with different spellings in British and American English: eu/us*/
-"These are irregular verbs with different spellings in British and American English: eu/us" = "Aquí tienes los verbos irregulares con las diferentes posibilidades entre la forma de inglés británico e Inglés americano: eu/us";
+/*These are irregular verbs with different spellings in British and American English: gb/us*/
+"These are irregular verbs with different spellings in British and American English: gb/us" = "Aquí tienes los verbos irregulares con las diferentes posibilidades entre la forma de inglés británico e Inglés americano: gb/us";

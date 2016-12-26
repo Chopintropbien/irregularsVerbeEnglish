@@ -99,6 +99,9 @@
 /*These are irregular verbs which are different from each other: A-B-C*/
 "These are irregular verbs which are different from each other: A-B-C" = "Voici les verbes irréguliers où toutes les formes sont différentes: A-B-C";
 
+/*These are irregular verbs with different spellings in British and American English: eu/us*/
+"These are irregular verbs with different spellings in British and American English: gb/us" = "Voici les verbes irréguliers où la forme britanique et américaine diffèrent: gb/us";
+
 
 
 

@@ -215,7 +215,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
                 case Form.ABC:
                     rev.headerText = Localization("These are irregular verbs which are different from each other: A-B-C")
                 case Form.enUs:
-                    rev.headerText = Localization("These are irregular verbs with different spellings in British and American English: eu/us")
+                    rev.headerText = Localization("These are irregular verbs with different spellings in British and American English: gb/us")
                 }
                 
                 // set form
@@ -224,7 +224,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             }
             
             func setTextInLetterType(_ letter: LetterButton){
-                rev.headerText = Localization("Here are irregular verbs who begins by: ") + letter.rawValue.uppercased()
+                rev.headerText = Localization("Here are irregular verbs who begins by: ") + letter.rawValue.uppercased() + Localization("Here are irregular verbs who begins by: Part2")
                 
                 // set letter
                 rev.letter = letter
@@ -249,19 +249,23 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             
             //             print all the verbes
             
-//            func foldl(_ list:Array<String>, base:String) -> String {
-//                
-//                var result = base
-//                
-//                for item in list {
-//                    
-//                    result = result + item
-//                    
-//                }
-//                
-//                return result
-//                
-//            }
+            func foldl(_ list:Array<String>, base:String) -> String {
+            
+                var result = base
+            
+                for item in list {
+            
+                    result = result + item
+            
+                }
+            
+                return result
+            
+            }
+            
+//            print(foldl(verbesData.verbes.map({
+//                return $0.infinitf() + ",\n"
+//                }), base: ""))
             
             
             
@@ -273,50 +277,53 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             
             
                 
-//            print(verbesData.verbes.count)
+            print(verbesData.verbes.count)
             
-//            print(foldl(verbesData.verbes.map({
-//                
-//                let form = $0.form
-//                
-//                var formS = ""
-//                switch(form){
-//                case Form.aiea:
-//                    formS = "aiea"
-//                case Form.aua:
-//                    formS = "aua"
-//                case Form.eae:
-//                    formS = "eae"
-//                case Form.eao:
-//                    formS = "eao"
-//                case Form.eiieie:
-//                    formS = "eiieie"
-//                case Form.eiii:
-//                    formS = "eiii"
-//                case Form.iao:
-//                    formS = "iao"
-//                case Form.iau:
-//                    formS = "iau"
-//                case Form.ieoo:
-//                    formS = "ieoo"
-//                case Form.undefine:
-//                    formS = "undefine"
-//                case Form.weak:
-//                    formS = "weak"
-//                }
-//   
-//                let a = $0.level.rawValue
-//                    + "," + formS
-//                    + "," + $0.infinitf()
-//                    + ",er " + $0.present()
-//                    + ",er " + $0.preterit()
-//                let b = ",er " + $0.parfait()
-//                    + ","+$0.translation(Lang.fr)
-//                    + "," + $0.translation(Lang.en)
-//                    + "," + $0.translation(Lang.es)
-//                    + ","+$0.translation(Lang.ru) + ",\n"
-//                return a + b
-//            }), base: ""))
+            print(foldl(verbesData.verbes.map({
+                
+                let form = $0.form
+                
+                var formS = ""
+                switch(form){
+                case Form.AAA:
+                    formS = "AAA"
+                    break;
+                case Form.ABB:
+                    formS = "ABB"
+                    break;
+                case Form.ABA:
+                    formS = "ABA"
+                    break;
+                case Form.ABBn:
+                    formS = "ABBn"
+                    break;
+                case Form.ABAn:
+                    formS = "ABAn"
+                    break;
+                case Form.ABC:
+                    formS = "ABC"
+                    break;
+                case Form.iau:
+                    formS = "iau"
+                    break;
+                case Form.enUs:
+                    formS = "enUs"
+                    break;
+                }
+
+   
+                let a = $0.level.rawValue
+                    + "," + formS
+                    + "," + $0.infinitf()
+                    + "," + $0.preterit()
+                let b = "," + $0.parfait()
+                    + ","+$0.translation(Lang.fr)
+                    + "," + $0.translation(Lang.en)
+                    + "," + $0.translation(Lang.es)
+//                    + ","+$0.translation(Lang.ru)
+                    + ",\n"
+                return a + b
+            }), base: ""))
  
  
             

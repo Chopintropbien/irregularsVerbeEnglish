@@ -54,7 +54,9 @@ class AskInAppPurschase: UIViewController {
     func setText(){
         titleLabel.text = Localization("Do you want to learn even more verbs?")
         explainationBuy1LevelLabel.text = Localization("Full access to all verbs in ") + self.level.rawValue + Localization(" level")
+        self.buy1LevelButton.setTitle(self.level.rawValue, for: UIControlState())
         explainationBuyAllLevelLabel.text = Localization("Full access to ALL verbs in ALL level")
+        self.buyAllLevelButton.setTitle(Localization("All"), for: UIControlState())
     }
     
     
@@ -123,7 +125,6 @@ class AskInAppPurschase: UIViewController {
             
             //buy label
             button.layer.frame = CGRect(x: (screenWidth - buyLevelButtonWidth) / 2, y: buy1LevelButtonY, width: buyLevelButtonWidth, height: buyLevelButtonHeight)
-            button.setTitle(level.rawValue, for: .normal)
             self.containerView.addSubview(button)
         }
         
@@ -159,7 +160,6 @@ class AskInAppPurschase: UIViewController {
                 
                 //buy label
                 buyAllLevelButton.layer.frame = CGRect(x: (screenWidth - buyLevelButtonWidth) / 2, y: buyAllLevelButtonY, width: buyLevelButtonWidth, height: buyLevelButtonHeight)
-                buyAllLevelButton.setTitle(Level.All.rawValue, for: .normal)
                 self.containerView.addSubview(buyAllLevelButton)
             }
             placeSecondProduct()

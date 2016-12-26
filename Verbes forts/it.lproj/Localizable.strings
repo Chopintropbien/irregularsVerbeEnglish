@@ -75,6 +75,7 @@
 
 /* Voici les verbes irregulier commençant par */
 "Here are irregular verbs who begins by: " = "Qui ci sono verbi irregolari che cominciano per: ";
+"Here are irregular verbs who begins by: Part2" = "";
 
 /* These are irregular verbs  with no changes: A - A – A */
 "These are irregular verbs  with no changes: A-A–A" = "Questi sono verbi irregolari che non cambiano: A-A–A";
@@ -97,8 +98,8 @@
 /*These are irregular verbs which are different from each other: A-B-C*/
 "These are irregular verbs which are different from each other: A-B-C" = "Questi sono verbi irregolari che sono differenti gli uni dagli altri: A-B-C";
 
-/*These are irregular verbs with different spellings in British and American English: eu/us*/
-"These are irregular verbs with different spellings in British and American English: eu/us" = "Questi sono verbi irregolari con pronuncia differente in Inglese Britannico e Inglese Americano: eu/us";
+/*These are irregular verbs with different spellings in British and American English: gb/us*/
+"These are irregular verbs with different spellings in British and American English: gb/us" = "Questi sono verbi irregolari con pronuncia differente in Inglese Britannico e Inglese Americano: gb/us";
 
 
 
