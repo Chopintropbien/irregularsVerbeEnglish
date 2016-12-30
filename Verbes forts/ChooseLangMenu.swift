@@ -36,6 +36,8 @@ class ChooseLangMenu: UITableViewController {
             selectedMenuItem = 5
         case Lang.ja:
             selectedMenuItem = 6
+        case Lang.ar:
+            selectedMenuItem = 7
         default:
             selectedMenuItem = 0
         }
@@ -76,7 +78,7 @@ class ChooseLangMenu: UITableViewController {
     
     // Return the number of rows in the section.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 8
     }
     
     // initiat table view
@@ -109,6 +111,8 @@ class ChooseLangMenu: UITableViewController {
             cell!.textLabel?.text = "中文"
         case 6:
             cell!.textLabel?.text = "日本語"
+        case 7:
+            cell!.textLabel?.text = "اللغة العربية"
         default: cell!.textLabel?.text = "Undefine"
         }
         
@@ -143,6 +147,8 @@ class ChooseLangMenu: UITableViewController {
             SetLanguage(Lang.zh)
         case 6:
             SetLanguage(Lang.ja)
+        case 7:
+            SetLanguage(Lang.ar)
         default:
             SetLanguage(Lang.en)
         }
