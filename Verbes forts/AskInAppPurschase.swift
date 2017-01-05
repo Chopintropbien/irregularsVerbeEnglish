@@ -33,6 +33,8 @@ class AskInAppPurschase: UIViewController {
     @IBOutlet weak var explainationBuyAllLevelLabel: UILabel!
     let buyAllLevelButton =  BuyLevelButton()
     
+    let animationDuration: TimeInterval = 3
+    
     
     
     
@@ -41,6 +43,7 @@ class AskInAppPurschase: UIViewController {
         self.containerView.isHidden = true
         self.canNotBuyView.isHidden = true
         placeElement()
+        
         
 
         // if there is no internet connection
@@ -66,14 +69,30 @@ class AskInAppPurschase: UIViewController {
         self.containerView.isHidden = true
         self.canNotBuyView.isHidden = true
         setText()
-        self.animation(view: view)
+        self.animation(view: view, display: true)
 
     }
     
-    private func animation(view: UIView){
-        let transitionOptions = UIViewAnimationOptions.transitionCurlDown
-        UIView.transition(with: view, duration: 3, options: transitionOptions, animations: {
-            view.isHidden = false
+    func hide(){
+        self.animation(view: self.containerView, display: false)
+        DispatchQueue.main.asyncAfter(deadline: .now() + self.animationDuration) {
+            self.upperView.isHidden = true
+            self.canNotBuyView.isHidden = true
+        }
+    }
+    
+    private func animation(view: UIView, display: Bool){
+        let transitionOptions: UIViewAnimationOptions
+        if(display){
+            transitionOptions = UIViewAnimationOptions.transitionCurlDown
+        }
+        else{
+            transitionOptions = UIViewAnimationOptions.transitionCurlUp
+            
+        }
+        
+        UIView.transition(with: view, duration: self.animationDuration, options: transitionOptions, animations: {
+            view.isHidden = !display
         }, completion: nil)
     }
     

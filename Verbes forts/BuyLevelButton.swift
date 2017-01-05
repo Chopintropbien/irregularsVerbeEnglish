@@ -47,6 +47,16 @@ class BuyLevelButton: SelectPlusExplainButton {
         levelExplainLabel.textAlignment = .center
         levelExplainLabel.textColor = fontColorLight
         self.addSubview(levelExplainLabel)
+        
+        
+        // add buy action
+        self.addTarget(self, action: #selector(buyButtonTapped(_:)), for: .touchUpInside)
+
+    }
+    
+    
+    func buyButtonTapped(_ sender: AnyObject) {
+        buyButtonHandler?(product!)
     }
 
 

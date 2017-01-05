@@ -249,19 +249,19 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
             
             //             print all the verbes
             
-            func foldl(_ list:Array<String>, base:String) -> String {
-            
-                var result = base
-            
-                for item in list {
-            
-                    result = result + item
-            
-                }
-            
-                return result
-            
-            }
+//            func foldl(_ list:Array<String>, base:String) -> String {
+//            
+//                var result = base
+//            
+//                for item in list {
+//            
+//                    result = result + item
+//            
+//                }
+//            
+//                return result
+//            
+//            }
             
 //            print(foldl(verbesData.verbes.map({
 //                return $0.infinitf() + ",\n"
@@ -276,54 +276,54 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
 //            verbesData.testAllAudio()
             
             
-                
-            print(verbesData.verbes.count)
-            
-            print(foldl(verbesData.verbes.map({
-                
-                let form = $0.form
-                
-                var formS = ""
-                switch(form){
-                case Form.AAA:
-                    formS = "AAA"
-                    break;
-                case Form.ABB:
-                    formS = "ABB"
-                    break;
-                case Form.ABA:
-                    formS = "ABA"
-                    break;
-                case Form.ABBn:
-                    formS = "ABBn"
-                    break;
-                case Form.ABAn:
-                    formS = "ABAn"
-                    break;
-                case Form.ABC:
-                    formS = "ABC"
-                    break;
-                case Form.iau:
-                    formS = "iau"
-                    break;
-                case Form.enUs:
-                    formS = "enUs"
-                    break;
-                }
-
-   
-                let a = $0.level.rawValue
-                    + "," + formS
-                    + "," + $0.infinitf()
-                    + "," + $0.preterit()
-                let b = "," + $0.parfait()
-                    + ","+$0.translation(Lang.fr)
-                    + "," + $0.translation(Lang.en)
-                    + "," + $0.translation(Lang.es)
-//                    + ","+$0.translation(Lang.ru)
-                    + ",\n"
-                return a + b
-            }), base: ""))
+//                
+//            print(verbesData.verbes.count)
+//            
+//            print(foldl(verbesData.verbes.map({
+//                
+//                let form = $0.form
+//                
+//                var formS = ""
+//                switch(form){
+//                case Form.AAA:
+//                    formS = "AAA"
+//                    break;
+//                case Form.ABB:
+//                    formS = "ABB"
+//                    break;
+//                case Form.ABA:
+//                    formS = "ABA"
+//                    break;
+//                case Form.ABBn:
+//                    formS = "ABBn"
+//                    break;
+//                case Form.ABAn:
+//                    formS = "ABAn"
+//                    break;
+//                case Form.ABC:
+//                    formS = "ABC"
+//                    break;
+//                case Form.iau:
+//                    formS = "iau"
+//                    break;
+//                case Form.enUs:
+//                    formS = "enUs"
+//                    break;
+//                }
+//
+//   
+//                let a = $0.level.rawValue
+//                    + "," + formS
+//                    + "," + $0.infinitf()
+//                    + "," + $0.preterit()
+//                let b = "," + $0.parfait()
+//                    + ","+$0.translation(Lang.fr)
+//                    + "," + $0.translation(Lang.en)
+//                    + "," + $0.translation(Lang.es)
+////                    + ","+$0.translation(Lang.ru)
+//                    + ",\n"
+//                return a + b
+//            }), base: ""))
  
  
             
