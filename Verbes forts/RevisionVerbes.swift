@@ -40,6 +40,7 @@ class RevisionVerbes: UIViewController {
     @IBOutlet weak var preteritLabel: UILabel!
     @IBOutlet weak var parfaitLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var finishButton: UIButton!
     
     // set the max size of label : Importante for func sizeInfinitifLabel
     var screenWidth:CGFloat = 0
@@ -79,9 +80,29 @@ class RevisionVerbes: UIViewController {
     var audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "be", ofType: "mp3")!), fileTypeHint: nil) // Grrrrrrr!!!!! Pourquoi???? audioPlayer.stop()
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        /* set tilte */
+        
+        if(level == Level.All){
+            self.title = Localization("All")
+        }
+        else{
+            self.title = level.rawValue
+        }
+        
+        if((form) != nil){
+            self.title! += ": " + form!.rawValue
+        }
+        else{
+            self.title! += ": " + letter!.rawValue
+        }
+        super.viewWillAppear(animated)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         /* If have access  */
         
         // display the correct sounds button
@@ -92,11 +113,15 @@ class RevisionVerbes: UIViewController {
         if(!self.verbes.isEmpty){
             self.headerLabel.text = headerText
             self.nextButton.setTitle(nextButtonText, for: UIControlState())
+            self.finishButton.setTitle(Localization("Finish"), for: UIControlState()) // TODO: trad
             self.initVerbe()
         }
+        
         // if just one verbes, don't dysplay the next button
+        self.finishButton.isHidden = true
         if(nextButtonHidden){
             self.nextButton.isHidden = true
+            self.finishButton.isHidden = false
         }
         
         screenWidth = self.view.bounds.width
@@ -181,8 +206,13 @@ class RevisionVerbes: UIViewController {
         nextButton.backgroundColor = pink
         nextButton.layer.cornerRadius = 4
         
-    
-        
+        // finishButton
+        finishButton.frame = CGRect(x: nextButtonMarginRight, y: nextButtonY, width: screenWidth - nextButtonMarginRight*2, height: nextButtonHeight)
+        finishButton.setTitleColor(UIColor.white, for: UIControlState())
+        finishButton.titleLabel!.font = UIFont(name: "Avenir-Heavy", size: 18)
+        finishButton.backgroundColor = darkPink
+        finishButton.layer.cornerRadius = 4
+ 
     }
     
     fileprivate func resizeInfinitifLabel(){
@@ -215,7 +245,7 @@ class RevisionVerbes: UIViewController {
         if(sounds) { playAudio() }
     }
     
-    // TODO: securiser
+    
     func playAudio(){
         
         do {
@@ -223,7 +253,8 @@ class RevisionVerbes: UIViewController {
             audioURL = URL(fileURLWithPath: Bundle.main.path(forResource: nameAudioFile, ofType: formatAudio)!)
             audioPlayer = try! AVAudioPlayer(contentsOf: audioURL, fileTypeHint: nil)
             audioPlayer.play()
-        
+            audioPlayer.numberOfLoops = Setting.numberLecture() - 1
+            
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
         }
         catch {
@@ -232,6 +263,15 @@ class RevisionVerbes: UIViewController {
     }
 
 
+    @IBAction func finishRevisionVerbe(_ sender: UIButton) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){
+            if let nav = self.navigationController{
+                nav.popViewController(animated: true)
+            }
+        }
+    }
+    
+    
     @IBAction func showNextVerbe() {
         /* stop lecture */
         audioPlayer.stop()
@@ -241,6 +281,7 @@ class RevisionVerbes: UIViewController {
         // Don't display the "Next" button if it will be the last verbe
         if(cursor == verbes.count - 2){
             self.nextButton.isHidden = true
+            self.finishButton.isHidden = false
         }
         if(cursor < verbes.count - 1) {
             cursor += 1
@@ -251,7 +292,7 @@ class RevisionVerbes: UIViewController {
                 UIView.transition(with: superViewHiddingButton, duration: replaceHiddingduration, options: transitionOptions, animations: {
                     self.hiddingButton.isHidden = false
                     self.hiddingImage.isHidden = false
-                    }, completion: nil)
+                }, completion: nil)
             }
             else{ // will display the new verbe right away
                 changeVerbeDuration = 0

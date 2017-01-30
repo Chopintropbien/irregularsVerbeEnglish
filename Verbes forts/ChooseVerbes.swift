@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class ChooseVerbes: UIViewController, ENSideMenuDelegate {
+class ChooseVerbes: UIViewController {
     
     var level: Level!
     
@@ -55,135 +55,16 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // set text in the choosed language
-        self.title = Localization("Irregular verbs")
-        self.randomOrderButton.setTitle(Localization("Random"), for: UIControlState())
-        self.randomOrderLabel.text = Localization("Random order")
-        self.formOrderLabel.text = Localization("Classified by form")
-        self.alphabeticOrderLabel.text = Localization("Classified by alphabetical order")
-        
-        
-        
-        //        let screenHeight = self.view.bounds.height
-        let screenWidth = self.view.bounds.width
-        
-        // 1th label
-        let labelHeight = height(65)
-        let randomOrderLabelMarginTop = height(190)
-        randomOrderLabel.frame = CGRect(x: 0, y: randomOrderLabelMarginTop, width: screenWidth, height: labelHeight)
-        
-        // Random Button
-        let buttonHeight = height(75)
-        let randomOrderButtonMarginTop = height(20)
-        let randomOrderButtonY = randomOrderLabelMarginTop + randomOrderButtonMarginTop + labelHeight
-        
-        let randomOrderButtonWidth = width(365)
-        let randomOrderButtonX = (screenWidth - randomOrderButtonWidth)*0.5
-        let randomOrderButtonHeight = buttonHeight + height(25)
-        randomOrderButton.frame = CGRect(x: randomOrderButtonX, y: randomOrderButtonY, width: randomOrderButtonWidth, height: randomOrderButtonHeight)
-        randomOrderButton.backgroundColor = pink
-        randomOrderButton.setTitleColor(UIColor.white, for: UIControlState())
-        
-        // 2th label
-        let formOrderLabelMarginTop = height(45)
-        let formOrderLabelY = randomOrderButtonY + randomOrderButtonHeight + formOrderLabelMarginTop
-        formOrderLabel.frame = CGRect(x: 0, y: formOrderLabelY, width: screenWidth, height: labelHeight)
-        
-        
-        // All the form button
-        let row1MarginTop = height(25)
-        let marginBottomBetweenTwo = height(20)
-        
-        let formWidth = width(203)
-        let formMarginToBorder = width(43)
-        let formMarginRightBetweenTwo = (screenWidth - formWidth*3 - formMarginToBorder*2) * 0.5
-        
-        
-        let row1FormY = formOrderLabelY + labelHeight + row1MarginTop
-        let row2FormY = row1FormY + buttonHeight + marginBottomBetweenTwo
-        let row3FormY = row2FormY + buttonHeight + marginBottomBetweenTwo
-        
-        let column1FormY = formMarginToBorder
-        let column2FormY = column1FormY + formWidth + formMarginRightBetweenTwo
-        let column3FormY = column2FormY + formWidth + formMarginRightBetweenTwo
-        
-        
-        AAAButton.frame = CGRect(x: column1FormY, y: row1FormY, width: formWidth, height: buttonHeight)
-        ABBButton.frame = CGRect(x: column2FormY, y: row1FormY, width: formWidth, height: buttonHeight)
-        ABAButton.frame = CGRect(x: column3FormY, y: row1FormY, width: formWidth, height: buttonHeight)
-        
-        
-        ABAnButton.frame = CGRect(x: column1FormY, y: row2FormY, width: formWidth, height: buttonHeight)
-        ABBnButton.frame = CGRect(x: column2FormY, y: row2FormY, width: formWidth, height: buttonHeight)
-        ABCButton.frame = CGRect(x: column3FormY, y: row2FormY, width: formWidth, height: buttonHeight)
-        
-        
-        enUsButton.frame = CGRect(x: column1FormY + width(116), y: row3FormY, width: formWidth, height: buttonHeight)
-        iauButton.frame = CGRect(x: column2FormY + width(116), y: row3FormY, width: formWidth, height: buttonHeight)
-        
-        
-        
-        
-        
-        
-        // 3th label
-        let alphabeticOrderLabelLabelY = row3FormY + buttonHeight + formOrderLabelMarginTop
-        alphabeticOrderLabel.frame = CGRect(x: 0, y: alphabeticOrderLabelLabelY, width: screenWidth, height: labelHeight)
-        
-        
-        // All the letter button
-        let letterWidth = width(165)
-        let letterMarginToBorder = width(25)
-        let letterMarginRightBetweenTwo = (screenWidth - letterWidth*4 - letterMarginToBorder*2)/3.0
-        
-        
-        let row1LetterY = alphabeticOrderLabelLabelY + labelHeight + row1MarginTop
-        let row2LetterY = row1LetterY + buttonHeight + marginBottomBetweenTwo
-        let row3LetterY = row2LetterY + buttonHeight + marginBottomBetweenTwo
-        let row4LetterY = row3LetterY + buttonHeight + marginBottomBetweenTwo
-        
-        
-        let column1LetterY = letterMarginToBorder
-        let column2LetterY = column1LetterY + letterWidth + letterMarginRightBetweenTwo
-        let column3LetterY = column2LetterY + letterWidth + letterMarginRightBetweenTwo
-        let column4LetterY = column3LetterY + letterWidth + letterMarginRightBetweenTwo
-        
-        
-        ABButton.frame = CGRect(x: column1LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
-        CDButton.frame = CGRect(x: column2LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
-        EFButton.frame = CGRect(x: column3LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
-        GHIButton.frame = CGRect(x: column4LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
-        
-        
-        
-        let letterbigMarginToBorder = width(90)
-        // do not display Button O
-        if(level == Level.A2){
-            OButton.isHidden = true
-            
-            JKLButton.frame = CGRect(x: column1LetterY + letterbigMarginToBorder, y: row2LetterY, width: letterWidth, height: buttonHeight)
-            MButton.frame = CGRect(x: column2LetterY + letterbigMarginToBorder, y: row2LetterY, width: letterWidth, height: buttonHeight)
-            PQButton.frame = CGRect(x: column3LetterY + letterbigMarginToBorder, y: row2LetterY, width: letterWidth, height: buttonHeight)
-        }
-        else{
-            JKLButton.frame = CGRect(x: column1LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
-            MButton.frame = CGRect(x: column2LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
-            OButton.frame = CGRect(x: column3LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
-            PQButton.frame = CGRect(x: column4LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
-        }
-        
-        
-        RButton.frame = CGRect(x: column1LetterY + letterbigMarginToBorder, y: row3LetterY, width: letterWidth, height: buttonHeight)
-        S1Button.frame = CGRect(x: column2LetterY + letterbigMarginToBorder, y: row3LetterY, width: letterWidth, height: buttonHeight)
-        S2Button.frame = CGRect(x: column3LetterY + letterbigMarginToBorder, y: row3LetterY, width: letterWidth, height: buttonHeight)
-        
-        TButton.frame = CGRect(x: column1LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
-        UButton.frame = CGRect(x: column2LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
-        WButton.frame = CGRect(x: column3LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
-        
-        
+        placeElement()
+        setText()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setText()
+        super.viewWillAppear(animated)
+    }
+
+
 
     
     
@@ -193,7 +74,7 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let rev = segue.destination as? RevisionVerbes{
             
-            let nbVerbeRandom = 15
+            let nbVerbeRandom = Setting.numberRandom()
             let headerTextRandom: String = Localization("Try to remember this ") + String(nbVerbeRandom) + Localization(" verbes")
             rev.level = level
             
@@ -426,7 +307,145 @@ class ChooseVerbes: UIViewController, ENSideMenuDelegate {
     }
     
     
+    public func setText(){
+        // set text in the choosed language
+        
+        if(level == Level.All){
+            self.title = Localization("All")
+        }
+        else{
+            self.title = level.rawValue
+        }
+        self.randomOrderButton.setTitle(Localization("Random"), for: UIControlState())
+        self.randomOrderLabel.text = Localization("Random order")
+        self.formOrderLabel.text = Localization("Classified by form")
+        self.alphabeticOrderLabel.text = Localization("Classified by alphabetical order")
+
+    }
     
+    
+    
+    // get proportion from design: https://app.sympli.io/app#!/
+    func placeElement(){
+        
+        //        let screenHeight = self.view.bounds.height
+        let screenWidth = self.view.bounds.width
+        
+        // 1th label
+        let labelHeight = height(65)
+        let randomOrderLabelMarginTop = height(190)
+        randomOrderLabel.frame = CGRect(x: 0, y: randomOrderLabelMarginTop, width: screenWidth, height: labelHeight)
+        
+        // Random Button
+        let buttonHeight = height(75)
+        let randomOrderButtonMarginTop = height(20)
+        let randomOrderButtonY = randomOrderLabelMarginTop + randomOrderButtonMarginTop + labelHeight
+        
+        let randomOrderButtonWidth = width(365)
+        let randomOrderButtonX = (screenWidth - randomOrderButtonWidth)*0.5
+        let randomOrderButtonHeight = buttonHeight + height(25)
+        randomOrderButton.frame = CGRect(x: randomOrderButtonX, y: randomOrderButtonY, width: randomOrderButtonWidth, height: randomOrderButtonHeight)
+        randomOrderButton.backgroundColor = pink
+        randomOrderButton.setTitleColor(UIColor.white, for: UIControlState())
+        
+        // 2th label
+        let formOrderLabelMarginTop = height(45)
+        let formOrderLabelY = randomOrderButtonY + randomOrderButtonHeight + formOrderLabelMarginTop
+        formOrderLabel.frame = CGRect(x: 0, y: formOrderLabelY, width: screenWidth, height: labelHeight)
+        
+        
+        // All the form button
+        let row1MarginTop = height(25)
+        let marginBottomBetweenTwo = height(20)
+        
+        let formWidth = width(203)
+        let formMarginToBorder = width(43)
+        let formMarginRightBetweenTwo = (screenWidth - formWidth*3 - formMarginToBorder*2) * 0.5
+        
+        
+        let row1FormY = formOrderLabelY + labelHeight + row1MarginTop
+        let row2FormY = row1FormY + buttonHeight + marginBottomBetweenTwo
+        let row3FormY = row2FormY + buttonHeight + marginBottomBetweenTwo
+        
+        let column1FormY = formMarginToBorder
+        let column2FormY = column1FormY + formWidth + formMarginRightBetweenTwo
+        let column3FormY = column2FormY + formWidth + formMarginRightBetweenTwo
+        
+        
+        AAAButton.frame = CGRect(x: column1FormY, y: row1FormY, width: formWidth, height: buttonHeight)
+        ABBButton.frame = CGRect(x: column2FormY, y: row1FormY, width: formWidth, height: buttonHeight)
+        ABAButton.frame = CGRect(x: column3FormY, y: row1FormY, width: formWidth, height: buttonHeight)
+        
+        
+        ABAnButton.frame = CGRect(x: column1FormY, y: row2FormY, width: formWidth, height: buttonHeight)
+        ABBnButton.frame = CGRect(x: column2FormY, y: row2FormY, width: formWidth, height: buttonHeight)
+        ABCButton.frame = CGRect(x: column3FormY, y: row2FormY, width: formWidth, height: buttonHeight)
+        
+        
+        enUsButton.frame = CGRect(x: column1FormY + width(116), y: row3FormY, width: formWidth, height: buttonHeight)
+        iauButton.frame = CGRect(x: column2FormY + width(116), y: row3FormY, width: formWidth, height: buttonHeight)
+        
+        
+        
+        
+        
+        
+        // 3th label
+        let alphabeticOrderLabelLabelY = row3FormY + buttonHeight + formOrderLabelMarginTop
+        alphabeticOrderLabel.frame = CGRect(x: 0, y: alphabeticOrderLabelLabelY, width: screenWidth, height: labelHeight)
+        
+        
+        // All the letter button
+        let letterWidth = width(165)
+        let letterMarginToBorder = width(25)
+        let letterMarginRightBetweenTwo = (screenWidth - letterWidth*4 - letterMarginToBorder*2)/3.0
+        
+        
+        let row1LetterY = alphabeticOrderLabelLabelY + labelHeight + row1MarginTop
+        let row2LetterY = row1LetterY + buttonHeight + marginBottomBetweenTwo
+        let row3LetterY = row2LetterY + buttonHeight + marginBottomBetweenTwo
+        let row4LetterY = row3LetterY + buttonHeight + marginBottomBetweenTwo
+        
+        
+        let column1LetterY = letterMarginToBorder
+        let column2LetterY = column1LetterY + letterWidth + letterMarginRightBetweenTwo
+        let column3LetterY = column2LetterY + letterWidth + letterMarginRightBetweenTwo
+        let column4LetterY = column3LetterY + letterWidth + letterMarginRightBetweenTwo
+        
+        
+        ABButton.frame = CGRect(x: column1LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
+        CDButton.frame = CGRect(x: column2LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
+        EFButton.frame = CGRect(x: column3LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
+        GHIButton.frame = CGRect(x: column4LetterY, y: row1LetterY, width: letterWidth, height: buttonHeight)
+        
+        
+        
+        let letterbigMarginToBorder = width(90)
+        // do not display Button O
+        if(level == Level.A2){
+            OButton.isHidden = true
+            
+            JKLButton.frame = CGRect(x: column1LetterY + letterbigMarginToBorder, y: row2LetterY, width: letterWidth, height: buttonHeight)
+            MButton.frame = CGRect(x: column2LetterY + letterbigMarginToBorder, y: row2LetterY, width: letterWidth, height: buttonHeight)
+            PQButton.frame = CGRect(x: column3LetterY + letterbigMarginToBorder, y: row2LetterY, width: letterWidth, height: buttonHeight)
+        }
+        else{
+            JKLButton.frame = CGRect(x: column1LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
+            MButton.frame = CGRect(x: column2LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
+            OButton.frame = CGRect(x: column3LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
+            PQButton.frame = CGRect(x: column4LetterY, y: row2LetterY, width: letterWidth, height: buttonHeight)
+        }
+        
+        
+        RButton.frame = CGRect(x: column1LetterY + letterbigMarginToBorder, y: row3LetterY, width: letterWidth, height: buttonHeight)
+        S1Button.frame = CGRect(x: column2LetterY + letterbigMarginToBorder, y: row3LetterY, width: letterWidth, height: buttonHeight)
+        S2Button.frame = CGRect(x: column3LetterY + letterbigMarginToBorder, y: row3LetterY, width: letterWidth, height: buttonHeight)
+        
+        TButton.frame = CGRect(x: column1LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
+        UButton.frame = CGRect(x: column2LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
+        WButton.frame = CGRect(x: column3LetterY + letterbigMarginToBorder, y: row4LetterY, width: letterWidth, height: buttonHeight)
+    
+    }
     
     
 

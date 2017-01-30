@@ -1,3 +1,8 @@
+
+
+
+
+
 //
 //  Products.swift
 //  Verbes forts
@@ -7,6 +12,7 @@
 //
 
 import Foundation
+import StoreKit
 
 public struct Products {
     
@@ -24,7 +30,7 @@ public struct Products {
     public static func nbProduct() -> Int{
         return productIdentifiers.count
     }
-    static func productId(level: Level) -> String{
+    public static func productId(level: Level) -> String{
         switch(level){
         case Level.A2:
             return A2ProductId
@@ -38,8 +44,77 @@ public struct Products {
             return AllProductId
         }
     }
+    
+    public static func isLevelPurchased(products: [SKProduct], level: Level) -> Bool{
+        if(products.isEmpty){
+            return isLevelPurchasedProductCheck(products: products, level: level)
+        }
+        else{
+            return isLevelPurchasedUserDefaultsCheck(level: level)
+        }
+    }
+    
+    
+    public static func isLevelPurchasedUserDefaultsCheck(level: Level) -> Bool{
+        if(Products.isA2B1B2C1ArePurchasedUserDefaultsCheck()){
+            return true
+        }
+        else if(UserDefaults.standard.bool(forKey: productId(level: level)) ||
+            UserDefaults.standard.bool(forKey: productId(level: Level.All))){
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    public static func isA2B1B2C1ArePurchasedUserDefaultsCheck() -> Bool{
+        var purchased = true
+        for productIdentifier in productIdentifiers {
+            if(productIdentifier != Products.AllProductId){
+                purchased = purchased && UserDefaults.standard.bool(forKey: productIdentifier)
+            }
+        }
+        return purchased
+    }
+    
+    
+    
+    public static func isLevelPurchasedProductCheck(products: [SKProduct], level: Level) -> Bool{
+        if(Products.isA2B1B2C1ArePurchasedProductCheck(products: products)){
+            return true
+        }
+        else if(Products.store.isProductPurchased(Products.productId(level: level)) ||
+            Products.store.isProductPurchased(Products.productId(level: Level.All))){
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    
+    public static func isA2B1B2C1ArePurchasedProductCheck(products: [SKProduct]) -> Bool{
+        var arePurchased = !products.isEmpty;
+        for p in products{
+            if(p.productIdentifier != Products.AllProductId){
+                
+                arePurchased = arePurchased && Products.store.isProductPurchased(p.productIdentifier)
+            }
+        }
+        return arePurchased
+    }
+    
+    
+    
+    
+    public static func findProduct(products: [SKProduct], id: String) -> SKProduct{
+        return products.filter({$0.productIdentifier == id}).first!
+    }
+    
 }
 
 func resourceNameForProductIdentifier(_ productIdentifier: String) -> String? {
     return productIdentifier.components(separatedBy: ".").last
 }
+
+    
+

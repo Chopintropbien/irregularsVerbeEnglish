@@ -42,7 +42,7 @@ enum LetterButton: String{
     static let allValues = [AB, CD, EF, GHI, JKL, M, O, PQ, R, S1, S2, T, U, W]
 }
 
-enum Level: String{
+public enum Level: String{
     case A2 = "A2"
     case B1 = "B1"
     case B2 = "B2"
@@ -92,6 +92,7 @@ struct Verbes{
     
     internal let verbes : [Verbe] =
         [
+  
             Verbe(level: Level.C1, form: Form.ABAn, verbe: ("arise", "arose", "arisen"), translations: [(Lang.fr, "survenir"), (Lang.en, "arise"), (Lang.es, "surgir"), (Lang.it, "presentarsi"), (Lang.ru, "подниматься/восставать"), (Lang.zh, "產生/出現/起身"), (Lang.ar, "تنشأ"), (Lang.ja, "生じる/起こる")]),
             Verbe(level: Level.A2, form: Form.ABBn, verbe: ("awake", "awoke", "awoken"), translations: [(Lang.fr, "se réveiller"), (Lang.en, "awake"), (Lang.es, "despertar"), (Lang.it, "svegliarsi/rendersi conto di"), (Lang.ru, "просыпаться/будить/пробудиться"), (Lang.zh, "清醒"), (Lang.ar, "تستيقظ"), (Lang.ja, "起きる")]),
             Verbe(level: Level.C1, form: Form.enUs, verbe: ("backslide", "backslid", "backslidden/backslid"), translations: [(Lang.fr, "récidiver"), (Lang.en, "backslide"), (Lang.es, "recaer/reincidir"), (Lang.it, "ricadere nel peccato"), (Lang.ru, "отступать"), (Lang.zh, "滑坡/倒退"), (Lang.ar, "تخلى عن ايمانه/عاد للعصيان"), (Lang.ja, "戻る/戻す")]),
