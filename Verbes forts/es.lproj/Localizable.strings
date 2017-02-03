@@ -72,6 +72,58 @@
 
 
 
+
+"Finish" = "Finalizar";
+
+
+/* Settings */
+
+"Settings" = "Ajustes";
+
+"Grammar and help" = "Gramática y ayuda";
+
+"Grammar" = "Gramática";
+
+"Help" = "Ayuda";
+
+"General" = "General";
+
+"Language" = "Idioma";
+
+"Number of reading" = "Número de lecturas";
+
+"Number of random verb" = "Número de verbos aleatorios";
+
+"Number of random verb title" = "verbo aleatorio";
+
+"Service action" = "Acción de servicio";
+
+"Restore previus purchases" = "Restaurar las comprar anteriores";
+
+
+
+/* inAppPurshase */
+"Internet connection to slow :" = "Conexión a internet muy lenta.";
+
+"Ok" = "Ok";
+
+"Unable to get your previous purchases" = "Imposible recibir las compras anteriores.";
+
+"Transaction Error:" = "Error de Transacción:";
+
+"Action available only with an internet connection" = "Acción posible solamente con conexión a internet";
+
+"Please wait..." = "Espere por favor...";
+
+"Transaction successful:" = "La transacción se ha efectuado con éxito";
+
+"Previous purchases restored" = "Las compras anteriores se han restablecido";
+
+
+
+
+
+
 /*specific english app*/
 
 /* Voici les verbes forts allemand commençant par */
@@ -101,3 +153,33 @@
 
 /*These are irregular verbs with different spellings in British and American English: gb/us*/
 "These are irregular verbs with different spellings in British and American English: gb/us" = "Aquí tienes los verbos irregulares con las diferentes posibilidades entre la forma de inglés británico e Inglés americano: gb/us";
+
+
+
+
+
+/* Help Anglais*/
+
+"introTitle" = "Presentación de la aplicación";
+
+"introText1" = "En nuestra aplicación, aprenderá el verbo de acuerdo con la siguiente imagen. \n\nPrimero va el infinitivo (rodeado), seguido del pretérito y el participio pasado, todo conjugado en tercera persona del singular.";
+
+"introText2" = "Una vez seleccione el nivel, podrá aprender los verbos irregulares ingleses de varias maneras.";
+
+"titleRandomOrder" = "1. Aprender al azar";
+
+"textRandomOrder" = "Es el método ideal para repasar los verbos. Tendrá que recordar una cierta cantidad de verbos que se mostrarán al azar en su nivel. (La cantidad se puede cambiar en los ajustes).";
+
+"titleClassifiedForm" = "2. Aprender según la forma";
+
+"textClassifiedForm1" = "La mayoría de los verbos ingleses siguen ciertos patrones. Con nuestra aplicación es posible estudiarlos seleccionándolos por su forma.\n\nPor ejemplo, existe la forma A-B-B, lo que significa que el Pretérito Simple y Participio Pasado son lo mismo, pero con una forma del infinitivo diferente.";
+
+"textClassifiedForm2" = "La forma “i–a–u”. Significa que la vocal de la raíz será “i” en la forma del infinitivo, “a” en el Pretérito Simple y “u” para el Participio Pasado.";
+
+"textClassifiedForm3" = "En la forma “gb-us” están los verbos irregulares con pronunciación distinta en inglés Británico y Americano.";
+
+"titleAlphabetical" = "3. Orden alfabético";
+
+"textAlphabetical" = "Si lo prefiere, puede aprender los verbos en orden alfabético.";
+
+

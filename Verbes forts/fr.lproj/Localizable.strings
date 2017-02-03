@@ -72,6 +72,58 @@
 
 
 
+
+
+
+"Finish" = "Fin";
+
+
+/* Settings */
+
+"Settings" = "Réglages";
+
+"Grammar and help" = "Grammaire et aide";
+
+"Grammar" = "Grammaire";
+
+"Help" = "Aide";
+
+"General" = "Général";
+
+"Language" = "Langues";
+
+"Number of reading" = "Nombre de lecture";
+
+"Number of random verb" = "Nombre de verbe aléatoire";
+
+"Number of random verb title" = "Verbe aléatoire";
+
+"Service action" = "Action de service";
+
+"Restore previus purchases" = "Réstorer les précédents achats";
+
+
+
+/* inAppPurshase */
+"Internet connection to slow :" = "Connection internet trop lente";
+
+"Ok" = "Ok";
+
+"Unable to get your previous purchases" = "Impossible de trouver les informations sur les précédents achats";
+
+"Transaction Error:" = "Erreur de transaction";
+
+"Action available only with an internet connection" = "Une connection internet est requise";
+
+"Please wait..." = "Patientez...";
+
+"Transaction successful:" = "Transaction réussis";
+
+"Previous purchases restored" = "Précédentes transactions retrouvées";
+
+
+
+
 /*specific english app*/
 
 /* Voici les verbes forts allemand commençant par */
@@ -101,6 +153,32 @@
 
 /*These are irregular verbs with different spellings in British and American English: eu/us*/
 "These are irregular verbs with different spellings in British and American English: gb/us" = "Voici les verbes irréguliers où la forme britanique et américaine diffèrent: gb/us";
+
+
+
+/* Help Anglais*/
+
+"introTitle" = "Présentation de l’application";
+
+"introText1" = "Avec notre application, vous pouvez apprendre les verbes irréguliers suivant le model de la photo suivante.\n\nEn premier vient l’infinitif (entouré) puis le prétérit de ce verbe et enfin le partie passé, tous conjugués à la 3ème personne du singulier: ”he/she/it”";
+
+"introText2" = "Une fois votre niveau sélectionné, vous pouvez apprendre les irréguliers forts de différentes façons.";
+
+"titleRandomOrder" = "1. Par order aléatoire";
+
+"textRandomOrder" = "Cette méthode est parfaite pour réviser les verbes. Vous avez à vous remémorer un certain nombre de verbe aléatoirement sélectionné dans votre niveau. Ce nombre peut être changé dans les réglages.";
+
+"titleClassifiedForm" = "2. Classé par forme";
+
+"textClassifiedForm1" = "La plupart des verbes irréguliers anglais suit un certain modèle. Avec notre application, vous avez la possibilité de les apprendre classés selon ces formes.\n\nPar exemple, la forme ” A-B-B” contient les verbes où le Prétérit et le Participe Passé sont identiques.";
+
+"textClassifiedForm2" = "La forme ”i-a-u”  signifie que la voyelle de la racine est ”i” à l’infinitif, ”a” au passé simple et ”u” au participe passé.";
+
+"textClassifiedForm3" = "La forme ”gb/us” contient les verbes où la forme britannique et américaine diffèrent.";
+
+"titleAlphabetical" = "3. Classé par ordre alphabétique";
+
+"textAlphabetical" = "Si vous le préférez, vous pouvez tout simplement apprendre les verbes forts classés par ordre alphabétique.";
 
 
 

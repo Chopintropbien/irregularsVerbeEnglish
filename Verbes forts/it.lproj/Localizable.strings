@@ -68,6 +68,53 @@
 "Full access to ALL verbs in ALL level" = "Accesso completo a TUTTI i verbi di TUTTI i livelli";
 
 
+"Finish" = "Fine";
+
+
+/* Settings */
+
+"Settings" = "Impostazioni";
+
+"Grammar and help" = "Grammatica e aiuto";
+
+"Grammar" = "Grammatica";
+
+"Help" = "Assistenza";
+
+"General" = "Generali";
+
+"Language" = "Lingua";
+
+"Number of reading" = "Numero letture";
+
+"Number of random verb" = "Numero di verbi in ordine sparso";
+
+"Number of random verb title" = "Ordine sparso";
+
+"Service action" = "Fasi";
+
+"Restore previus purchases" = "Recupera acquisti precedenti";
+
+
+
+/* inAppPurshase */
+"Internet connection to slow :" = "Connessione internet troppo lenta";
+
+"Ok" = "Ok";
+
+"Unable to get your previous purchases" = "Impossibile ottenere acquisti precedenti";
+
+"Transaction Error:" = "Errore transazione:";
+
+"Action available only with an internet connection" = "Azione disponibile solo con connessione internet";
+
+"Please wait..." = "Attendere prego…";
+
+"Transaction successful:" = "Transazione finalizzata con successo:";
+
+"Previous purchases restored" = "L’acquisto precedente è stato recuperato";
+
+
 
 
 
@@ -100,6 +147,34 @@
 
 /*These are irregular verbs with different spellings in British and American English: gb/us*/
 "These are irregular verbs with different spellings in British and American English: gb/us" = "Questi sono verbi irregolari con pronuncia differente in Inglese Britannico e Inglese Americano: gb/us";
+
+
+
+
+
+/* Help Anglais*/
+
+"introTitle" = "Presentazione applicazione";
+
+"introText1" = "Nella nostra applicazione, imparerai i verbi attraverso le immagini di seguito.\n\nPer prima cosa troverai l’infinito (dentro un circolo) e poi, il Passato del verbo e il Participio Passato, tutti coniugati alla terza persona singolare: “he/she/it”";
+
+"introText2" = "Una volta selezionato il livello, potrai imparare I verbi irregolari inglesi in diversi modi.";
+
+"titleRandomOrder" = "1. In ordine sparso";
+
+"textRandomOrder" = "Questo metodo è perfetto per ripassare I verbi. Dovrai ricordare una certa quantità di verbi in rodine sparso selezionati per il tuo livello. (La quantità può essere modificata nelle impostazioni) ";
+
+"titleClassifiedForm" = "2. Verbi classificati secondo la forma";
+
+"textClassifiedForm1" = "Molti verbi irregolari inglesi seguono dei modelli fissi. Con la nostra App, hai la possibilità di impararli dividendoli per forma.\n\nPer esempio, troverai la forma A-B-B, ovvero quella in cui il Passato e il Participio passato sono uguali, ma diversi dall’infinito";
+
+"textClassifiedForm2" = "La forma “i-a-u”.  Significa che la vocale della radice è “i” per l’infinito, “a” per il Passato e “u” per il Participio passato.";
+
+"textClassifiedForm3" = "Nella forma “gb-us” troviamo verbi irregolari con spelling differente tra l’inglese britannico e quello americano.";
+
+"titleAlphabetical" = "3. Ordine alfabetico";
+
+"textAlphabetical" = "Se preferisci, puoi imparare I verbi dividendoli in ordine alfabetico.";
 
 
 

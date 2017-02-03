@@ -70,6 +70,54 @@
 
 
 
+"Finish" = "完成";
+
+
+/* Settings */
+
+"Settings" = "設定";
+
+"Grammar and help" = "語法及幫助";
+
+"Grammar" = "語法";
+
+"Help" = "幫助";
+
+"General" = "一般";
+
+"Language" = "語言";
+
+"Number of reading" = "閱讀次數";
+
+"Number of random verb" = "隨機動詞之數量";
+
+"Number of random verb title" = "隨機動詞";
+
+"Service action" = "行動處";
+
+"Restore previus purchases" = "回復之前的購物信息";
+
+
+
+/* inAppPurshase */
+"Internet connection to slow :" = "互聯網連接速度緩慢";
+
+"Ok" = "確定";
+
+"Unable to get your previous purchases" = "無法取得之前的購物信息";
+
+"Transaction Error:" = "交易錯誤";
+
+"Action available only with an internet connection" = "此動作需連接互聯網";
+
+"Please wait..." = "請等待";
+
+"Transaction successful:" = "交易成功";
+
+"Previous purchases restored" = "回復上次的購物信息";
+
+
+
 
 /*specific english app*/
 
@@ -103,4 +151,31 @@
 
 /*gb/us*/
 "gb/us" = "gb/us";
+
+
+
+
+/* Help Anglais*/
+
+"introTitle" = "應用程式介紹";
+
+"introText1" = "從我們的應用程式，你可以根據以下圖片學習動詞\n\n首先會顯示不定詞(字框裡)，之後是該動詞的過去式和過去分詞，全部以第三人稱標示：﹒「他/她/它」。";
+
+"introText2" = "選取了程度後，你可以從不同方面學習英文的不規則動詞。";
+
+"titleRandomOrder" = "1. 以隨機形式學習";
+
+"textRandomOrder" = "這個方式非常適合重溫動詞。你需要從你所選擇的程度中，牢記若干數量的動詞。(數量可於設定更改) ";
+
+"titleClassifiedForm" = "2. 以詞形分類學習";
+
+"textClassifiedForm1" = "大部份的英文不規則動詞都是有跡可尋。透過我們的應用程式，你可以從詞形中學習動詞。\n\n舉例來說，詞形A-B-B，即指過去式和過去分詞是一樣的，但與不定詞不同。";
+
+"textClassifiedForm2" = "「i–a–u」形式 ，意指不定詞的字根元音為「i」 ，過去式為「a」，而過去分詞則是「u」";
+
+"textClassifiedForm3" = "「英-美」形式是英國與美國串法不同的不規則動詞";
+
+"titleAlphabetical" = "3. 按字母順序排列";
+
+"textAlphabetical" = "你可以按喜好以字母順序排列學習動詞。";
 

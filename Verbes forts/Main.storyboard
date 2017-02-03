@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vDD-2c-dTx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vDD-2c-dTx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWE-41-ARL" customClass="CategoryVerbeButtonPink" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWE-41-ARL" customClass="CategoryVerbeButtonPink" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="16" y="105" width="288" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -34,28 +35,28 @@
                                     <segue destination="NWz-Re-UIZ" kind="push" identifier="random" id="Uwh-mj-Jig"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classés celon la forme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypg-5B-E5U" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Classés celon la forme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypg-5B-E5U" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="16" y="135" width="288" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classés par ordre alphabétique" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TH1-k5-e6g" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Classés par ordre alphabétique" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TH1-k5-e6g" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="16" y="346" width="288" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ordre aléatoire" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTO-NC-xVR" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ordre aléatoire" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTO-NC-xVR" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="16" y="76" width="288" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7k-I4-wIt" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7k-I4-wIt" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="133" y="174" width="116" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -66,7 +67,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="A-B-A" id="AtD-MY-sdt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgn-Pw-z1r" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgn-Pw-z1r" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="191" y="283" width="116" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -77,7 +78,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="i-a-u" id="p8z-01-ifd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUH-Uw-Mh7" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUH-Uw-Mh7" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="7" y="229" width="116" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -88,7 +89,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="A-B-An" id="cSg-Lh-9m8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HE-5q-8i6" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HE-5q-8i6" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="252" y="228" width="116" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -99,7 +100,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="A-B-C" id="EJW-ZE-kyD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tH-dL-6MT" customClass="CategoryVerbeButtonPink" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tH-dL-6MT" customClass="CategoryVerbeButtonFree" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="9" y="174" width="116" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -110,7 +111,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="A-A-A" id="sdu-GY-zLc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV4-rs-2YH" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV4-rs-2YH" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="128" y="228" width="116" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -121,7 +122,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="A-B-Bn" id="FTY-EW-k2X"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqv-3Z-3M6" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqv-3Z-3M6" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="55" y="283" width="116" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -132,7 +133,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="en-us" id="j6v-di-7KC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eI-UK-Tzl" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eI-UK-Tzl" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="252" y="173" width="116" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -143,7 +144,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="A-B-B" id="s9E-52-6Lv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l72-md-jgX" customClass="CategoryVerbeButtonPink" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l72-md-jgX" customClass="CategoryVerbeButtonFree" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="40" y="389" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -154,7 +155,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="a-b" id="ZZ3-CV-kRY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4f-eL-aPf" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4f-eL-aPf" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="116" y="389" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -165,7 +166,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="c-d" id="L7F-sB-P9L"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yF2-Cz-mkP" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yF2-Cz-mkP" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="191" y="389" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -176,7 +177,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="e-f" id="8Qk-0J-qNj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvP-Cc-J1Y" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvP-Cc-J1Y" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="270" y="389" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -187,7 +188,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="g-h-i" id="RcD-mK-iyF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y59-Sg-nnQ" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y59-Sg-nnQ" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="40" y="459" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -198,7 +199,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="j-k-l" id="ehK-Xj-SjO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rx-YT-cuu" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rx-YT-cuu" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="116" y="458" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -209,7 +210,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="m" id="GNd-eJ-GIO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbn-Mi-fkt" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbn-Mi-fkt" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="84" y="516" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -220,7 +221,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="r" id="vfM-HS-ENL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atR-0H-HfJ" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atR-0H-HfJ" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="160" y="516" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -231,7 +232,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="sa-se-sh-si-sl-sm" id="BFr-5V-mh7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdG-BE-mz1" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdG-BE-mz1" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="235" y="516" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -242,7 +243,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="sn-so-sp-st-sw" id="ZB8-Wv-qHZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWV-1e-trr" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWV-1e-trr" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="166" y="578" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -253,7 +254,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="u" id="d0h-ev-zBH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cQ-Ic-5Mm" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cQ-Ic-5Mm" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="228" y="578" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -264,7 +265,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="w" id="4Sh-zz-epq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VY-Vi-Q1N" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VY-Vi-Q1N" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="191" y="458" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -275,7 +276,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="o" id="eko-Z6-7u5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdc-84-nPA" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdc-84-nPA" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="273" y="458" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -286,7 +287,7 @@
                                     <segue destination="NWz-Re-UIZ" kind="show" identifier="p-q" id="hLX-7F-S6T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hre-ho-W5c" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hre-ho-W5c" customClass="CategoryVerbeButtonWhite" customModule="Verbes_forts" customModuleProvider="target">
                                 <rect key="frame" x="90" y="578" width="60" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -611,13 +612,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM0-sb-HRC" customClass="BasicLabelBig" customModule="Verbes_forts" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="99" width="359" height="20.5"/>
+                                        <rect key="frame" x="8" y="99" width="359" height="30.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ut2-L6-21y">
-                                        <rect key="frame" x="8" y="157.5" width="359" height="21"/>
+                                        <rect key="frame" x="8" y="167.5" width="359" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -636,28 +637,28 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoc-F5-iTV">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voullez-vous apprendre plus de verbe? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYJ-BX-hyh" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voullez-vous apprendre plus de verbe? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYJ-BX-hyh" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
                                         <rect key="frame" x="36" y="45" width="302" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accédez à tous les verbes du niveau A2 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzg-V3-50I" customClass="BasicLabelGray" customModule="Verbes_forts" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accédez à tous les verbes du niveau A2 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzg-V3-50I" customClass="BasicLabelGray" customModule="Verbes_forts" customModuleProvider="target">
                                         <rect key="frame" x="23" y="172" width="328" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accédez acces à TOUS les verbes de TOUS les niveaux " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZS-wG-xvI" customClass="BasicLabelGray" customModule="Verbes_forts" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accédez acces à TOUS les verbes de TOUS les niveaux " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZS-wG-xvI" customClass="BasicLabelGray" customModule="Verbes_forts" customModuleProvider="target">
                                         <rect key="frame" x="-12" y="387" width="418" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwI-lR-YOu" customClass="OrSeparator" customModule="Verbes_forts" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwI-lR-YOu" customClass="OrSeparator" customModule="Verbes_forts" customModuleProvider="target">
                                         <rect key="frame" x="166" y="291" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -694,171 +695,6 @@
             </objects>
             <point key="canvasLocation" x="2364" y="921.58920539730138"/>
         </scene>
-        <!--Grammar-->
-        <scene sceneID="h56-Ux-wba">
-            <objects>
-                <viewController id="vCh-ZI-Cp5" customClass="Grammar" customModule="Verbes_forts" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ubq-7H-lW8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Bdr-hr-Q3A"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7LW-ze-k7m">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Guc-Rg-Fh5">
-                                <rect key="frame" x="0.0" y="64" width="375" height="1436"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rI8-8v-Hgr">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="1500"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ff6-me-eUI">
-                                                <rect key="frame" x="8" y="8" width="359" height="213"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1500" id="4HD-28-Fqk"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="rI8-8v-Hgr" firstAttribute="leading" secondItem="Guc-Rg-Fh5" secondAttribute="leading" id="5o8-jQ-Ei8"/>
-                                    <constraint firstAttribute="trailing" secondItem="rI8-8v-Hgr" secondAttribute="trailing" id="dCZ-Rj-bG9"/>
-                                    <constraint firstAttribute="bottom" secondItem="rI8-8v-Hgr" secondAttribute="bottom" priority="600" constant="-40" id="q3a-1b-MbJ"/>
-                                    <constraint firstItem="rI8-8v-Hgr" firstAttribute="top" secondItem="Guc-Rg-Fh5" secondAttribute="top" constant="-64" id="zed-qV-nGS"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="rI8-8v-Hgr" firstAttribute="width" secondItem="7LW-ze-k7m" secondAttribute="width" id="BQO-HP-37t"/>
-                            <constraint firstItem="Guc-Rg-Fh5" firstAttribute="leading" secondItem="7LW-ze-k7m" secondAttribute="leading" id="DQv-ds-fbn"/>
-                            <constraint firstItem="Guc-Rg-Fh5" firstAttribute="top" secondItem="ubq-7H-lW8" secondAttribute="bottom" id="DVN-qO-OCV"/>
-                            <constraint firstAttribute="trailing" secondItem="Guc-Rg-Fh5" secondAttribute="trailing" id="Eey-if-wkA"/>
-                            <constraint firstItem="Bdr-hr-Q3A" firstAttribute="top" secondItem="Guc-Rg-Fh5" secondAttribute="bottom" id="LDX-ED-sQe"/>
-                        </constraints>
-                    </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1500"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tW1-hl-MRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="193" y="3746"/>
-        </scene>
-        <!--Help-->
-        <scene sceneID="0sg-ZT-f56">
-            <objects>
-                <viewController id="0Mg-6v-J29" customClass="Help" customModule="Verbes_forts" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mcC-f5-NvB"/>
-                        <viewControllerLayoutGuide type="bottom" id="0t8-B0-FkM"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bMe-Nr-LGL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEn-ZY-14g">
-                                <rect key="frame" x="0.0" y="64" width="375" height="1936"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4A-SH-SMw">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="2000"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Understand how the app is organize " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLW-lZ-ATc">
-                                                <rect key="frame" x="8" y="21" width="359" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How the verbs are presented ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYw-oM-w0j">
-                                                <rect key="frame" x="8" y="89" width="359" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I ) Random order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruO-mF-Sdx">
-                                                <rect key="frame" x="8" y="614" width="359" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fav-3f-1i0">
-                                                <rect key="frame" x="8" y="118" width="359" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <string key="text">I our application, you learn verb according to the picture. First, the infinif, wich is surrounded and then, in order the present of this verb, the preterit and the particip.  All conjugated form are for the third person singular: "er/sie/es"</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="description" translatesAutoresizingMaskIntoConstraints="NO" id="ZXg-F8-C33">
-                                                <rect key="frame" x="60" y="254" width="240" height="280"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kg5-8G-Fjx">
-                                                <rect key="frame" x="8" y="542" width="359" height="66.5"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <string key="text">In our App, once you have selected a level, you can learn german irregular verb by different ways.  
-</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="II ) Classified by form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hX6-AK-IEP">
-                                                <rect key="frame" x="8" y="774" width="359" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="III ) Alphabetical order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZ3-pD-vfp">
-                                                <rect key="frame" x="8" y="990" width="359" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2000" id="Xch-cP-6fv"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="z4A-SH-SMw" firstAttribute="leading" secondItem="FEn-ZY-14g" secondAttribute="leading" id="77O-f2-NUj"/>
-                                    <constraint firstAttribute="trailing" secondItem="z4A-SH-SMw" secondAttribute="trailing" id="Fhg-6D-Lig"/>
-                                    <constraint firstItem="z4A-SH-SMw" firstAttribute="top" secondItem="FEn-ZY-14g" secondAttribute="top" constant="-64" id="bzH-kz-Bcm"/>
-                                    <constraint firstItem="z4A-SH-SMw" firstAttribute="leading" secondItem="FEn-ZY-14g" secondAttribute="leading" id="jLP-cn-dWC"/>
-                                    <constraint firstAttribute="bottom" secondItem="z4A-SH-SMw" secondAttribute="bottom" constant="-128" id="jlH-UT-fiI"/>
-                                    <constraint firstAttribute="trailing" secondItem="z4A-SH-SMw" secondAttribute="trailing" id="t1m-ja-kta"/>
-                                    <constraint firstAttribute="bottom" secondItem="z4A-SH-SMw" secondAttribute="bottom" constant="-128" id="z1z-Xk-Ixh"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="z4A-SH-SMw" firstAttribute="width" secondItem="bMe-Nr-LGL" secondAttribute="width" id="1wi-2p-mX4"/>
-                            <constraint firstItem="FEn-ZY-14g" firstAttribute="leading" secondItem="bMe-Nr-LGL" secondAttribute="leading" id="QXe-r3-rrY"/>
-                            <constraint firstAttribute="trailing" secondItem="FEn-ZY-14g" secondAttribute="trailing" id="Wnp-iA-0B6"/>
-                            <constraint firstItem="FEn-ZY-14g" firstAttribute="top" secondItem="mcC-f5-NvB" secondAttribute="bottom" id="eKG-T5-Yhs"/>
-                            <constraint firstItem="0t8-B0-FkM" firstAttribute="top" secondItem="FEn-ZY-14g" secondAttribute="bottom" id="sdL-Fs-sRX"/>
-                        </constraints>
-                    </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="2000"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CUx-RH-eJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-954" y="3971"/>
-        </scene>
         <!--Les verbes forts-->
         <scene sceneID="aQ2-cI-Jgi">
             <objects>
@@ -878,7 +714,7 @@
                                         <rect key="frame" x="0.0" y="31" width="375" height="610"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOy-f7-kKY" customClass="SettingsSegueButton" customModule="Verbes_forts" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="343" width="375" height="43"/>
+                                                <rect key="frame" x="0.0" y="296" width="375" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="WeH-7J-tpW"/>
@@ -891,7 +727,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfx-LO-Cbe" customClass="SettingsDirectButton" customModule="Verbes_forts" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="460" width="375" height="43"/>
+                                                <rect key="frame" x="0.0" y="413" width="375" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="xGZ-9p-826"/>
@@ -902,7 +738,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbn-Z5-tl0" customClass="SettingsLabel" customModule="Verbes_forts" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="426" width="360" height="30"/>
+                                                <rect key="frame" x="15" y="379" width="360" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="WUz-h6-baY"/>
                                                 </constraints>
@@ -910,19 +746,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1s-bY-pee" customClass="SettingsSegueButton" customModule="Verbes_forts" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="85" width="375" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="krH-qg-QUm"/>
-                                                </constraints>
-                                                <state key="normal" title="Grammar"/>
-                                                <connections>
-                                                    <segue destination="vCh-ZI-Cp5" kind="show" id="bpl-ke-oAY">
-                                                        <nil key="action"/>
-                                                    </segue>
-                                                </connections>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grammar and help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="et9-4j-bY1" customClass="SettingsLabel" customModule="Verbes_forts" customModuleProvider="target">
                                                 <rect key="frame" x="15" y="51" width="360" height="30"/>
                                                 <constraints>
@@ -933,20 +756,18 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2z8-YU-8Rd" customClass="SettingsSegueButton" customModule="Verbes_forts" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="132" width="375" height="43"/>
+                                                <rect key="frame" x="0.0" y="85" width="375" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="4Rf-Ib-quD"/>
                                                 </constraints>
                                                 <state key="normal" title="Help"/>
                                                 <connections>
-                                                    <segue destination="0Mg-6v-J29" kind="show" id="qsw-ol-ycM">
-                                                        <nil key="action"/>
-                                                    </segue>
+                                                    <segue destination="Byc-OR-bN1" kind="show" id="qF8-Rd-ckX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBj-9X-iqp" customClass="SettingsSegueButton" customModule="Verbes_forts" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="296" width="375" height="43"/>
+                                                <rect key="frame" x="0.0" y="249" width="375" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="250-nK-P3Y"/>
@@ -959,7 +780,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sic-ZJ-ZD2" customClass="SettingsLabel" customModule="Verbes_forts" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="215" width="360" height="30"/>
+                                                <rect key="frame" x="15" y="168" width="360" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="3zb-rn-3Ih"/>
                                                 </constraints>
@@ -968,7 +789,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KT6-wR-2UE" customClass="SettingsSegueButton" customModule="Verbes_forts" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="249" width="375" height="43"/>
+                                                <rect key="frame" x="0.0" y="202" width="375" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="MZ9-3X-9tn"/>
@@ -986,22 +807,18 @@
                                             <constraint firstAttribute="height" constant="610" id="2fp-N0-B9n"/>
                                             <constraint firstAttribute="trailing" secondItem="KT6-wR-2UE" secondAttribute="trailing" id="4tN-Lk-dqX"/>
                                             <constraint firstItem="Sic-ZJ-ZD2" firstAttribute="top" secondItem="2z8-YU-8Rd" secondAttribute="bottom" constant="40" id="AAJ-Oi-yGl"/>
-                                            <constraint firstItem="2z8-YU-8Rd" firstAttribute="top" secondItem="r1s-bY-pee" secondAttribute="bottom" constant="4" id="BCh-0e-13O"/>
                                             <constraint firstAttribute="trailing" secondItem="Sic-ZJ-ZD2" secondAttribute="trailing" id="D8y-Vf-buI"/>
                                             <constraint firstItem="xBj-9X-iqp" firstAttribute="top" secondItem="KT6-wR-2UE" secondAttribute="bottom" constant="4" id="ETL-Gz-lpC"/>
                                             <constraint firstItem="kfx-LO-Cbe" firstAttribute="leading" secondItem="obd-nr-KRc" secondAttribute="leading" id="Fio-Xc-6iT"/>
                                             <constraint firstItem="2z8-YU-8Rd" firstAttribute="leading" secondItem="obd-nr-KRc" secondAttribute="leading" id="I4z-Gz-cHs"/>
                                             <constraint firstAttribute="trailing" secondItem="kfx-LO-Cbe" secondAttribute="trailing" id="KkQ-Hg-gFH"/>
-                                            <constraint firstItem="r1s-bY-pee" firstAttribute="leading" secondItem="obd-nr-KRc" secondAttribute="leading" id="Naa-Te-lEv"/>
                                             <constraint firstItem="xBj-9X-iqp" firstAttribute="leading" secondItem="obd-nr-KRc" secondAttribute="leading" id="NgL-g6-UIh"/>
                                             <constraint firstAttribute="trailing" secondItem="Zbn-Z5-tl0" secondAttribute="trailing" id="Nmu-b0-EMc"/>
                                             <constraint firstItem="kfx-LO-Cbe" firstAttribute="top" secondItem="Zbn-Z5-tl0" secondAttribute="bottom" constant="4" id="OEX-Pm-iqL"/>
                                             <constraint firstItem="zOy-f7-kKY" firstAttribute="leading" secondItem="obd-nr-KRc" secondAttribute="leading" id="OeV-f0-qpb"/>
                                             <constraint firstAttribute="trailing" secondItem="zOy-f7-kKY" secondAttribute="trailing" id="RaE-Ha-k0e"/>
                                             <constraint firstItem="Zbn-Z5-tl0" firstAttribute="top" secondItem="zOy-f7-kKY" secondAttribute="bottom" constant="40" id="aug-KS-iiQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="r1s-bY-pee" secondAttribute="trailing" id="b4y-Ps-UHg"/>
                                             <constraint firstItem="et9-4j-bY1" firstAttribute="leading" secondItem="obd-nr-KRc" secondAttribute="leading" constant="15" id="eDU-bj-21a"/>
-                                            <constraint firstItem="r1s-bY-pee" firstAttribute="top" secondItem="et9-4j-bY1" secondAttribute="bottom" constant="4" id="eZr-x1-hAv"/>
                                             <constraint firstItem="et9-4j-bY1" firstAttribute="top" secondItem="obd-nr-KRc" secondAttribute="top" constant="51" id="eiF-ly-333"/>
                                             <constraint firstItem="KT6-wR-2UE" firstAttribute="top" secondItem="Sic-ZJ-ZD2" secondAttribute="bottom" constant="4" id="hhj-QX-vyz"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="630" constant="610" id="jmP-d0-S5e"/>
@@ -1012,6 +829,7 @@
                                             <constraint firstAttribute="trailing" secondItem="et9-4j-bY1" secondAttribute="trailing" id="xLJ-IB-qyu"/>
                                             <constraint firstItem="KT6-wR-2UE" firstAttribute="leading" secondItem="obd-nr-KRc" secondAttribute="leading" id="xg6-1s-i4F"/>
                                             <constraint firstAttribute="trailing" secondItem="2z8-YU-8Rd" secondAttribute="trailing" id="y0Y-AB-2Hk"/>
+                                            <constraint firstItem="2z8-YU-8Rd" firstAttribute="top" secondItem="et9-4j-bY1" secondAttribute="bottom" constant="4" id="zlK-v5-U5f"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1035,8 +853,7 @@
                     <navigationItem key="navigationItem" title="Les verbes forts" id="dCw-ec-KgG"/>
                     <connections>
                         <outlet property="generalLabel" destination="Sic-ZJ-ZD2" id="8OB-xt-QEc"/>
-                        <outlet property="grammarButton" destination="r1s-bY-pee" id="2dA-UM-KJU"/>
-                        <outlet property="grammarHelpLabel" destination="et9-4j-bY1" id="vW6-1H-zHw"/>
+                        <outlet property="grammarHelpLabel" destination="et9-4j-bY1" id="3YA-YQ-aYd"/>
                         <outlet property="helpButton" destination="2z8-YU-8Rd" id="50C-mr-jQK"/>
                         <outlet property="inAppPurshaseButton" destination="kfx-LO-Cbe" id="9Xu-LF-67U"/>
                         <outlet property="inAppPurshaseLabel" destination="Zbn-Z5-tl0" id="ORE-HK-f03"/>
@@ -1047,7 +864,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0T8-dg-1P0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="194" y="2424"/>
+            <point key="canvasLocation" x="192.80000000000001" y="2423.8380809595205"/>
         </scene>
         <!--Number Random-->
         <scene sceneID="OtW-fi-Auf">
@@ -1095,14 +912,233 @@
             </objects>
             <point key="canvasLocation" x="1337" y="1965"/>
         </scene>
+        <!--Help-->
+        <scene sceneID="qDQ-0G-9X6">
+            <objects>
+                <viewController id="Byc-OR-bN1" customClass="Help" customModule="Verbes_forts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wRa-8s-SZU"/>
+                        <viewControllerLayoutGuide type="bottom" id="lEY-E0-4sT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h8a-2T-Yai">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2700"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzx-qa-95r">
+                                <rect key="frame" x="0.0" y="64" width="375" height="2636"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edb-6d-nXH">
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="2626"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Understand how the app is organized " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15d-Fh-NTZ">
+                                                <rect key="frame" x="8" y="21" width="359" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I ) Random order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-I2-I6i">
+                                                <rect key="frame" x="8" y="701.5" width="359" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="HOt-R7-uRf">
+                                                <rect key="frame" x="8" y="89.5" width="359" height="179"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">I our application, you learn verb according to the following picture. 
+
+First come the infinitive form (surrounded) and then, the Simple Past of this verb and the Past Participle , all conjugated in the third person singular: ”he/she/it”</string>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="showOrder" translatesAutoresizingMaskIntoConstraints="NO" id="2nw-Ij-I2D">
+                                                <rect key="frame" x="67" y="278.5" width="240" height="280"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="2nw-Ij-I2D" secondAttribute="height" multiplier="6:7" id="086-WP-AS2"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="16h-Vl-VxF">
+                                                <rect key="frame" x="8" y="566.5" width="359" height="109"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Once you have selected a level, you can learn english irregular verbe by different ways.  
+
+</string>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="II ) Classified by form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjv-iF-NkF">
+                                                <rect key="frame" x="8" y="897.5" width="359" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="III ) Alphabetical order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOK-XA-auR">
+                                                <rect key="frame" x="8" y="2376" width="359" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="9BE-ZS-rst">
+                                                <rect key="frame" x="8" y="739" width="359" height="132.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">This method is perfect to review verbs. You will have to remember a certain amount of verbes randomly selected in your level. (This amount can be change in the settings)
+</string>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="j9E-hz-sEv">
+                                                <rect key="frame" x="8" y="935" width="359" height="248.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Most of the english irregular verbs follows certains patterns. With our App, you have the possibility to learn them sorted by form. 
+
+For exemple there is the form A-B-B, which means that the Simple Past and the Past Participle are the same, but different from the infinitive
+</string>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="If you prefer, you can learn the verb simply sort by alphabetical order. " textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="eTc-mv-rMd">
+                                                <rect key="frame" x="8" y="2413.5" width="359" height="62.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A-B-B" translatesAutoresizingMaskIntoConstraints="NO" id="ctk-0E-WZ3">
+                                                <rect key="frame" x="73" y="1193.5" width="240" height="293"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ctk-0E-WZ3" secondAttribute="height" multiplier="240:293" id="ddi-ix-PX0"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="nkj-KI-Ynw">
+                                                <rect key="frame" x="8" y="1494.5" width="359" height="132.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">The form ”i - a - u”. It is meaning that the vowel of the root will be ”i” for the infinitive form, ”a” for the Simple Past and ”u” for the past participle
+</string>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i-a-u" translatesAutoresizingMaskIntoConstraints="NO" id="saP-dn-N7i">
+                                                <rect key="frame" x="73" y="1637" width="240" height="293"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="saP-dn-N7i" secondAttribute="height" multiplier="240:293" id="5r3-W6-3j5"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="kyT-zR-Cbj">
+                                                <rect key="frame" x="8" y="1938" width="359" height="109"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">
+In the form ”gb-us” are irregular verbs with different spellings in British and American English</string>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gbus" translatesAutoresizingMaskIntoConstraints="NO" id="Hx5-rU-vjk">
+                                                <rect key="frame" x="73" y="2057" width="240" height="293"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Hx5-rU-vjk" secondAttribute="height" multiplier="240:293" id="bfj-sv-tLQ"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="eOK-XA-auR" firstAttribute="top" secondItem="Hx5-rU-vjk" secondAttribute="bottom" constant="26" id="1dc-WB-eVJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="saP-dn-N7i" secondAttribute="trailing" constant="62" id="1rB-gr-AbF"/>
+                                            <constraint firstItem="15d-Fh-NTZ" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="8" id="9ad-Ik-Kro"/>
+                                            <constraint firstAttribute="trailing" secondItem="ctk-0E-WZ3" secondAttribute="trailing" constant="62" id="9g7-ek-y6K"/>
+                                            <constraint firstItem="2nw-Ij-I2D" firstAttribute="top" secondItem="HOt-R7-uRf" secondAttribute="bottom" constant="10" id="BA4-d2-Sbf"/>
+                                            <constraint firstAttribute="trailing" secondItem="gjv-iF-NkF" secondAttribute="trailing" constant="8" id="Dty-L4-h5C"/>
+                                            <constraint firstItem="eTc-mv-rMd" firstAttribute="top" secondItem="eOK-XA-auR" secondAttribute="bottom" constant="14" id="EA1-nO-psz"/>
+                                            <constraint firstItem="nkj-KI-Ynw" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="8" id="Fsw-hX-aLO"/>
+                                            <constraint firstItem="eTc-mv-rMd" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="8" id="HW4-TD-NaP"/>
+                                            <constraint firstItem="16h-Vl-VxF" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="8" id="JZ6-sR-obK"/>
+                                            <constraint firstAttribute="bottom" secondItem="eTc-mv-rMd" secondAttribute="bottom" constant="150" id="KGA-i9-ayy"/>
+                                            <constraint firstItem="eOK-XA-auR" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="8" id="LIL-KV-yk4"/>
+                                            <constraint firstItem="kyT-zR-Cbj" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="8" id="LWv-c3-RPf"/>
+                                            <constraint firstAttribute="trailing" secondItem="9BE-ZS-rst" secondAttribute="trailing" constant="8" id="PCz-Q2-3Ki"/>
+                                            <constraint firstItem="saP-dn-N7i" firstAttribute="top" secondItem="nkj-KI-Ynw" secondAttribute="bottom" constant="10" id="Q66-bK-7g2"/>
+                                            <constraint firstItem="9BE-ZS-rst" firstAttribute="top" secondItem="B5P-I2-I6i" secondAttribute="bottom" constant="14" id="Qp8-0h-uQK"/>
+                                            <constraint firstAttribute="trailing" secondItem="eTc-mv-rMd" secondAttribute="trailing" constant="8" id="RnH-rz-LDO"/>
+                                            <constraint firstItem="j9E-hz-sEv" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="8" id="SZm-wT-kzc"/>
+                                            <constraint firstItem="gjv-iF-NkF" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="8" id="Ueg-gb-sc0"/>
+                                            <constraint firstItem="HOt-R7-uRf" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="8" id="Vaa-zf-qhZ"/>
+                                            <constraint firstItem="ctk-0E-WZ3" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="73" id="W8V-ZS-t7J"/>
+                                            <constraint firstItem="nkj-KI-Ynw" firstAttribute="top" secondItem="ctk-0E-WZ3" secondAttribute="bottom" constant="8" id="WDy-6C-wFJ"/>
+                                            <constraint firstItem="HOt-R7-uRf" firstAttribute="top" secondItem="15d-Fh-NTZ" secondAttribute="bottom" constant="45" id="YtI-rt-gIm"/>
+                                            <constraint firstItem="16h-Vl-VxF" firstAttribute="top" secondItem="2nw-Ij-I2D" secondAttribute="bottom" constant="8" id="Yx4-Dn-Itj"/>
+                                            <constraint firstItem="15d-Fh-NTZ" firstAttribute="top" secondItem="Edb-6d-nXH" secondAttribute="top" constant="21" id="ZHR-Ge-Sat"/>
+                                            <constraint firstItem="2nw-Ij-I2D" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="67" id="ZdY-WS-1tm"/>
+                                            <constraint firstAttribute="trailing" secondItem="j9E-hz-sEv" secondAttribute="trailing" constant="8" id="aNj-ED-pGh"/>
+                                            <constraint firstItem="B5P-I2-I6i" firstAttribute="top" secondItem="16h-Vl-VxF" secondAttribute="bottom" constant="26" id="cL5-Gh-UEj"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hx5-rU-vjk" secondAttribute="trailing" constant="62" id="d0O-DD-2y7"/>
+                                            <constraint firstItem="j9E-hz-sEv" firstAttribute="top" secondItem="gjv-iF-NkF" secondAttribute="bottom" constant="14" id="dQg-RF-bSX"/>
+                                            <constraint firstItem="9BE-ZS-rst" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="8" id="he6-nD-DgI"/>
+                                            <constraint firstItem="B5P-I2-I6i" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="8" id="ifC-M5-RkE"/>
+                                            <constraint firstItem="gjv-iF-NkF" firstAttribute="top" secondItem="9BE-ZS-rst" secondAttribute="bottom" constant="26" id="iyn-I6-j4Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="15d-Fh-NTZ" secondAttribute="trailing" constant="8" id="jgg-gM-llk"/>
+                                            <constraint firstAttribute="trailing" secondItem="16h-Vl-VxF" secondAttribute="trailing" constant="8" id="mYJ-li-Kz4"/>
+                                            <constraint firstItem="ctk-0E-WZ3" firstAttribute="top" secondItem="j9E-hz-sEv" secondAttribute="bottom" constant="10" id="nPj-iY-TzO"/>
+                                            <constraint firstAttribute="trailing" secondItem="HOt-R7-uRf" secondAttribute="trailing" constant="8" id="ost-Nc-BHT"/>
+                                            <constraint firstItem="Hx5-rU-vjk" firstAttribute="top" secondItem="kyT-zR-Cbj" secondAttribute="bottom" constant="10" id="rgf-yj-k1W"/>
+                                            <constraint firstItem="saP-dn-N7i" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="73" id="tcS-xj-4Vj"/>
+                                            <constraint firstAttribute="trailing" secondItem="2nw-Ij-I2D" secondAttribute="trailing" constant="68" id="ukE-EO-CAm"/>
+                                            <constraint firstAttribute="trailing" secondItem="kyT-zR-Cbj" secondAttribute="trailing" constant="8" id="vFj-6W-Vgs"/>
+                                            <constraint firstItem="kyT-zR-Cbj" firstAttribute="top" secondItem="saP-dn-N7i" secondAttribute="bottom" constant="8" id="vej-nh-ET3"/>
+                                            <constraint firstAttribute="trailing" secondItem="nkj-KI-Ynw" secondAttribute="trailing" constant="8" id="xqH-wF-FfA"/>
+                                            <constraint firstItem="Hx5-rU-vjk" firstAttribute="leading" secondItem="Edb-6d-nXH" secondAttribute="leading" constant="73" id="ylV-na-Pts"/>
+                                            <constraint firstAttribute="trailing" secondItem="B5P-I2-I6i" secondAttribute="trailing" constant="8" id="zEN-dy-M6c"/>
+                                            <constraint firstAttribute="trailing" secondItem="eOK-XA-auR" secondAttribute="trailing" constant="8" id="zmf-QL-JuE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Edb-6d-nXH" secondAttribute="bottom" constant="-128" id="EZd-zC-D6V"/>
+                                    <constraint firstItem="Edb-6d-nXH" firstAttribute="leading" secondItem="nzx-qa-95r" secondAttribute="leading" id="LLO-pV-ZYJ"/>
+                                    <constraint firstItem="Edb-6d-nXH" firstAttribute="top" secondItem="nzx-qa-95r" secondAttribute="top" constant="-64" id="NoR-f0-vPh"/>
+                                    <constraint firstAttribute="bottom" secondItem="Edb-6d-nXH" secondAttribute="bottom" constant="-128" id="ZV1-PI-kSS"/>
+                                    <constraint firstItem="Edb-6d-nXH" firstAttribute="leading" secondItem="nzx-qa-95r" secondAttribute="leading" id="c1L-Hc-YbA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Edb-6d-nXH" secondAttribute="trailing" id="dxf-M6-MVP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Edb-6d-nXH" secondAttribute="trailing" id="zzs-fg-7rH"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nzx-qa-95r" firstAttribute="top" secondItem="wRa-8s-SZU" secondAttribute="bottom" id="Jwj-m9-4nn"/>
+                            <constraint firstItem="lEY-E0-4sT" firstAttribute="top" secondItem="nzx-qa-95r" secondAttribute="bottom" id="Yi0-VO-9Zl"/>
+                            <constraint firstItem="nzx-qa-95r" firstAttribute="leading" secondItem="h8a-2T-Yai" secondAttribute="leading" id="nyd-gK-cHj"/>
+                            <constraint firstAttribute="trailing" secondItem="nzx-qa-95r" secondAttribute="trailing" id="s6V-jd-VL8"/>
+                            <constraint firstItem="Edb-6d-nXH" firstAttribute="width" secondItem="h8a-2T-Yai" secondAttribute="width" id="xch-Pg-7Qt"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="2700"/>
+                    <connections>
+                        <outlet property="introText1" destination="HOt-R7-uRf" id="opt-FR-nx8"/>
+                        <outlet property="introText2" destination="16h-Vl-VxF" id="CDK-lY-50g"/>
+                        <outlet property="introTitle" destination="15d-Fh-NTZ" id="Dl8-M8-kSU"/>
+                        <outlet property="textAlphabetical" destination="eTc-mv-rMd" id="nEr-vU-uVX"/>
+                        <outlet property="textClassifiedForm1" destination="j9E-hz-sEv" id="O4A-Gc-DMb"/>
+                        <outlet property="textClassifiedForm2" destination="nkj-KI-Ynw" id="g3H-QH-oBW"/>
+                        <outlet property="textClassifiedForm3" destination="kyT-zR-Cbj" id="udQ-Nj-z6c"/>
+                        <outlet property="textRandomOrder" destination="9BE-ZS-rst" id="DAJ-yX-rHc"/>
+                        <outlet property="titleAlphabetical" destination="eOK-XA-auR" id="9o4-iD-Jly"/>
+                        <outlet property="titleClassifiedForm" destination="gjv-iF-NkF" id="hYu-MI-Wl4"/>
+                        <outlet property="titleRandomOrder" destination="B5P-I2-I6i" id="r9t-hl-erF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCu-jd-G26" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-298.39999999999998" y="4052.4737631184412"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="A-B-B" width="487" height="570"/>
         <image name="Note_PNG" width="639" height="738"/>
-        <image name="description" width="16" height="16"/>
+        <image name="gbus" width="486" height="573"/>
+        <image name="i-a-u" width="500" height="573"/>
         <image name="revealed" width="647" height="745"/>
+        <image name="showOrder" width="486" height="570"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4yU-pn-7nR"/>
+        <segue reference="i8o-AA-9Pd"/>
         <segue reference="mVz-GI-n76"/>
         <segue reference="cSg-Lh-9m8"/>
     </inferredMetricsTieBreakers>

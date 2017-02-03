@@ -13,7 +13,7 @@ var sounds = true
 
 
 let pink = UIColor(red: 57/255.0, green: 157/255.0, blue: 235/255.0, alpha: 1)
-let darkPink = UIColor(red: 217/255.0, green: 43/255.0, blue: 83/255.0, alpha: 1)
+let darkPink = UIColor(red: 48/255.0, green: 145/255.0, blue: 230/255.0, alpha: 1)
 let fontColor = UIColor(red: 46/255.0, green: 46/255.0, blue: 46/255.0, alpha: 1)
 let fontColorLight = UIColor(red: 60/255.0, green: 60/255.0, blue: 60/255.0, alpha: 1)
 let darkGray = UIColor(red: 100/255.0, green: 100/255.0, blue: 100/255.0, alpha: 1)
@@ -24,7 +24,7 @@ let almostWhite = UIColor(red: 254/255.0, green: 254/255.0, blue: 254/255.0, alp
 
 let defaultBlue = UIColor(red: 14.0/255.0, green: 122.0/255.0, blue: 254.0/255.0, alpha: 1)
 let basicBackgroundColor = UIColor(red: 249/255.0, green: 249/255.0, blue: 249/255.0, alpha: 1)
-let freeColor = UIColor(red: 236/255.0, green: 206/255.0, blue: 213/255.0, alpha: 1)
+let freeColor = UIColor(red: 75/255.0, green: 170/255.0, blue: 250/255.0, alpha: 1)
 
 
 

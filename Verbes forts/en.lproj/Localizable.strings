@@ -73,6 +73,54 @@
 
 
 
+"Finish" = "Finish";
+
+
+/* Settings */
+
+"Settings" = "Settings";
+
+"Grammar and help" = "Grammar and help";
+
+"Grammar" = "Grammar";
+
+"Help" = "Help";
+
+"General" = "General";
+
+"Language" = "Language";
+
+"Number of reading" = "Number of readings";
+
+"Number of random verb" = "Number of random verbs";
+
+"Number of random verb title" = "Random verbs";
+
+"Service action" = "Service action";
+
+"Restore previus purchases" = "Restore previous purchases";
+
+
+
+/* inAppPurshase */
+"Internet connection to slow :" = "Internet connection too slow";
+
+"Ok" = "Ok";
+
+"Unable to get your previous purchases" = "Unable to get your previous purchases";
+
+"Transaction Error:" = "Transaction Error:";
+
+"Action available only with an internet connection" = "Action available only with an internet connection";
+
+"Please wait..." = "Please wait…";
+
+"Transaction successful:" = "Transaction successful:";
+
+"Previous purchases restored" = "Previous purchases restored:";
+
+
+
 
 
 /* Voici les verbes forts allemand commençant par */
@@ -102,6 +150,57 @@
 
 /*These are irregular verbs with different spellings in British and American English: eu/us*/
 "These are irregular verbs with different spellings in British and American English: gb/us" = "These are irregular verbs with different spellings in British and American English: gb/us";
+
+
+
+
+
+
+/* Help Anglais*/
+
+"introTitle" = "Application Presentation";
+
+"introText1" = "In our application, you learn verbs according to the following picture.\n\nFirst is the infinitive form (surrounded); then, the Simple Past of this verb and then the Past Participle , all conjugated in the third person singular: ”he/she/it:”";
+
+"introText2" = "Once you have selected a level, you can learn English irregular verbs in different ways.";
+
+"titleRandomOrder" = "1. Learning with random order";
+
+"textRandomOrder" = "This method is perfect to review verbs. You will have to remember a certain number of verbs randomly selected in your level. (This amount can be changed in the settings)";
+
+"titleClassifiedForm" = "2. Learning classified by form";
+
+"textClassifiedForm1" = "Most of the English irregular verbs follow certain patterns. With our App, you have the opportunity to learn them sorted by form.\n\nFor example there is the form A-B-B, which means that the Simple Past and the Past Participle are the same, but different from the infinitive";
+
+"textClassifiedForm2" = "The form ”i - a – u” means that the vowel of the root will be ”i” for the infinitive form, ”a” for the Simple Past and ”u” for the Past Participle";
+
+"textClassifiedForm3" = "In the form ”gb-us,” irregular verbs have different spellings in British and American English:";
+
+"titleAlphabetical" = "3. Alphabetical order";
+
+"textAlphabetical" = "If you prefer, you can learn the verbs simply by sorting in alphabetical order. ";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

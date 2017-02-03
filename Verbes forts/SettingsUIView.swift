@@ -13,7 +13,6 @@ import UIKit
 class SettingsUIView: UIViewController {
     
     @IBOutlet weak var grammarHelpLabel: SettingsLabel!
-    @IBOutlet weak var grammarButton: SettingsSegueButton!
     @IBOutlet weak var helpButton: SettingsSegueButton!
     
     @IBOutlet weak var generalLabel: SettingsLabel!
@@ -45,8 +44,7 @@ class SettingsUIView: UIViewController {
     private func setText(){
         self.title = Localization("Settings")
         
-        grammarHelpLabel.text = Localization("Grammar and help")
-        grammarButton.setTitle(Localization("Grammar"), for: .normal)
+        grammarHelpLabel.text = Localization("Help")
         helpButton.setTitle(Localization("Help"), for: .normal)
         
         generalLabel.text = Localization("General")

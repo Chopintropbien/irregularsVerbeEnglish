@@ -404,7 +404,6 @@
 		986061E01E3D047A0051D26A /* SettingsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061DF1E3D047A0051D26A /* SettingsUIView.swift */; };
 		986061E41E3D053B0051D26A /* NumberLecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061E31E3D053B0051D26A /* NumberLecture.swift */; };
 		986061E81E3D05610051D26A /* NumberRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061E71E3D05610051D26A /* NumberRandom.swift */; };
-		986061EC1E3D05810051D26A /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061EB1E3D05810051D26A /* Grammar.swift */; };
 		986061F01E3D05AA0051D26A /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061EF1E3D05AA0051D26A /* Help.swift */; };
 		986061F41E3D05CC0051D26A /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061F31E3D05CC0051D26A /* SettingsTableViewController.swift */; };
 		988DC7F91DFC23BD00F28B79 /* BasicLabelBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988DC7F81DFC23BD00F28B79 /* BasicLabelBig.swift */; };
@@ -847,7 +846,6 @@
 		986061DF1E3D047A0051D26A /* SettingsUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsUIView.swift; sourceTree = "<group>"; };
 		986061E31E3D053B0051D26A /* NumberLecture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberLecture.swift; sourceTree = "<group>"; };
 		986061E71E3D05610051D26A /* NumberRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberRandom.swift; sourceTree = "<group>"; };
-		986061EB1E3D05810051D26A /* Grammar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grammar.swift; sourceTree = "<group>"; };
 		986061EF1E3D05AA0051D26A /* Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
 		986061F31E3D05CC0051D26A /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		988A55881E3CF5AC00FB8262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1367,7 +1365,6 @@
 				98D4DE3A1D8B2D5400F41E87 /* ChooseLangMenu.swift */,
 				986061E31E3D053B0051D26A /* NumberLecture.swift */,
 				986061E71E3D05610051D26A /* NumberRandom.swift */,
-				986061EB1E3D05810051D26A /* Grammar.swift */,
 				986061EF1E3D05AA0051D26A /* Help.swift */,
 				986061F31E3D05CC0051D26A /* SettingsTableViewController.swift */,
 			);
@@ -2006,7 +2003,6 @@
 				98B391BE1D757353001E1AA1 /* RevisionVerbes.swift in Sources */,
 				98999E891DE3338C00C50B56 /* AskInAppPurschase.swift in Sources */,
 				988DC7F91DFC23BD00F28B79 /* BasicLabelBig.swift in Sources */,
-				986061EC1E3D05810051D26A /* Grammar.swift in Sources */,
 				98B79F9A1D70AD9300A3F94B /* ChooseVerbes.swift in Sources */,
 				9827BD6A1DE9814300A4912D /* BuyLevelButton.swift in Sources */,
 				986061C61E3CFFE50051D26A /* SettingsLabel.swift in Sources */,

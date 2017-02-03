@@ -95,7 +95,6 @@ class ChooseLevel: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("ffffff")
         if let cv = segue.destination as? ChooseVerbes{
             if let id = segue.identifier{
                 switch id {

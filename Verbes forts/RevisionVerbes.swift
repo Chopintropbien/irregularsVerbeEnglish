@@ -93,8 +93,11 @@ class RevisionVerbes: UIViewController {
         if((form) != nil){
             self.title! += ": " + form!.rawValue
         }
-        else{
+        else if((letter) != nil){
             self.title! += ": " + letter!.rawValue
+        }
+        else{
+            self.title! += ": " + Localization("Random")
         }
         super.viewWillAppear(animated)
     }
