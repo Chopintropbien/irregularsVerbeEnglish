@@ -30,6 +30,9 @@ class MyNavigationController: ENSideMenuNavigationController, ENSideMenuDelegate
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    
     // MARK: - ENSideMenu Delegate
 //    func sideMenuWillOpen() {
 //        print("sideMenuWillOpen")

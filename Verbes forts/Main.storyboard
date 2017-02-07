@@ -611,7 +611,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxS-ga-9nL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM0-sb-HRC" customClass="BasicLabelBig" customModule="Verbes_forts" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM0-sb-HRC" customClass="BasicLabelBig" customModule="Verbes_forts" customModuleProvider="target">
                                         <rect key="frame" x="8" y="99" width="359" height="30.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -637,7 +637,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoc-F5-iTV">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voullez-vous apprendre plus de verbe? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYJ-BX-hyh" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voullez-vous apprendre plus de verbe? " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYJ-BX-hyh" customClass="BasicLabel" customModule="Verbes_forts" customModuleProvider="target">
                                         <rect key="frame" x="36" y="45" width="302" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -928,22 +928,22 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="2636"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edb-6d-nXH">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="2626"/>
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="2630"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Understand how the app is organized " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15d-Fh-NTZ">
-                                                <rect key="frame" x="8" y="21" width="359" height="23.5"/>
+                                                <rect key="frame" x="8" y="21" width="359" height="24"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I ) Random order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-I2-I6i">
-                                                <rect key="frame" x="8" y="701.5" width="359" height="23.5"/>
+                                                <rect key="frame" x="8" y="702" width="359" height="24"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="HOt-R7-uRf">
-                                                <rect key="frame" x="8" y="89.5" width="359" height="179"/>
+                                                <rect key="frame" x="8" y="90" width="359" height="179"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">I our application, you learn verb according to the following picture. 
 
@@ -952,13 +952,13 @@ First come the infinitive form (surrounded) and then, the Simple Past of this ve
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="showOrder" translatesAutoresizingMaskIntoConstraints="NO" id="2nw-Ij-I2D">
-                                                <rect key="frame" x="67" y="278.5" width="240" height="280"/>
+                                                <rect key="frame" x="67" y="279" width="240" height="280"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="2nw-Ij-I2D" secondAttribute="height" multiplier="6:7" id="086-WP-AS2"/>
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="16h-Vl-VxF">
-                                                <rect key="frame" x="8" y="566.5" width="359" height="109"/>
+                                                <rect key="frame" x="8" y="567" width="359" height="109"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Once you have selected a level, you can learn english irregular verbe by different ways.  
 
@@ -967,19 +967,19 @@ First come the infinitive form (surrounded) and then, the Simple Past of this ve
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="II ) Classified by form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjv-iF-NkF">
-                                                <rect key="frame" x="8" y="897.5" width="359" height="23.5"/>
+                                                <rect key="frame" x="8" y="899" width="359" height="24"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="III ) Alphabetical order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOK-XA-auR">
-                                                <rect key="frame" x="8" y="2376" width="359" height="23.5"/>
+                                                <rect key="frame" x="8" y="2379" width="359" height="24"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="9BE-ZS-rst">
-                                                <rect key="frame" x="8" y="739" width="359" height="132.5"/>
+                                                <rect key="frame" x="8" y="740" width="359" height="133"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">This method is perfect to review verbs. You will have to remember a certain amount of verbes randomly selected in your level. (This amount can be change in the settings)
 </string>
@@ -987,7 +987,7 @@ First come the infinitive form (surrounded) and then, the Simple Past of this ve
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="j9E-hz-sEv">
-                                                <rect key="frame" x="8" y="935" width="359" height="248.5"/>
+                                                <rect key="frame" x="8" y="937" width="359" height="249"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Most of the english irregular verbs follows certains patterns. With our App, you have the possibility to learn them sorted by form. 
 
@@ -997,19 +997,19 @@ For exemple there is the form A-B-B, which means that the Simple Past and the Pa
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="If you prefer, you can learn the verb simply sort by alphabetical order. " textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="eTc-mv-rMd">
-                                                <rect key="frame" x="8" y="2413.5" width="359" height="62.5"/>
+                                                <rect key="frame" x="8" y="2417" width="359" height="63"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A-B-B" translatesAutoresizingMaskIntoConstraints="NO" id="ctk-0E-WZ3">
-                                                <rect key="frame" x="73" y="1193.5" width="240" height="293"/>
+                                                <rect key="frame" x="73" y="1196" width="240" height="293"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ctk-0E-WZ3" secondAttribute="height" multiplier="240:293" id="ddi-ix-PX0"/>
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="nkj-KI-Ynw">
-                                                <rect key="frame" x="8" y="1494.5" width="359" height="132.5"/>
+                                                <rect key="frame" x="8" y="1497" width="359" height="133"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">The form ”i - a - u”. It is meaning that the vowel of the root will be ”i” for the infinitive form, ”a” for the Simple Past and ”u” for the past participle
 </string>
@@ -1017,13 +1017,13 @@ For exemple there is the form A-B-B, which means that the Simple Past and the Pa
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i-a-u" translatesAutoresizingMaskIntoConstraints="NO" id="saP-dn-N7i">
-                                                <rect key="frame" x="73" y="1637" width="240" height="293"/>
+                                                <rect key="frame" x="73" y="1640" width="240" height="293"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="saP-dn-N7i" secondAttribute="height" multiplier="240:293" id="5r3-W6-3j5"/>
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="kyT-zR-Cbj">
-                                                <rect key="frame" x="8" y="1938" width="359" height="109"/>
+                                                <rect key="frame" x="8" y="1941" width="359" height="109"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">
 In the form ”gb-us” are irregular verbs with different spellings in British and American English</string>
@@ -1031,7 +1031,7 @@ In the form ”gb-us” are irregular verbs with different spellings in British 
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gbus" translatesAutoresizingMaskIntoConstraints="NO" id="Hx5-rU-vjk">
-                                                <rect key="frame" x="73" y="2057" width="240" height="293"/>
+                                                <rect key="frame" x="73" y="2060" width="240" height="293"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Hx5-rU-vjk" secondAttribute="height" multiplier="240:293" id="bfj-sv-tLQ"/>
                                                 </constraints>

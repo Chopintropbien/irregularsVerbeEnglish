@@ -38,6 +38,7 @@ class Help: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.title = Localization("Help")
         
+        introTitle.text = Localization("introTitle")
         introText1.text = Localization("introText1")
         introText2.text = Localization("introText2")
         titleRandomOrder.text = Localization("titleRandomOrder")

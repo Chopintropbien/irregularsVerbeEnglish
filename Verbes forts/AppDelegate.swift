@@ -9,6 +9,10 @@
 import UIKit
 
 @UIApplicationMain
+
+
+
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -25,12 +29,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
+        
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
+         print(String(describing: type(of: self.topViewController())))
+        if let rv = self.topViewController() as? RevisionVerbes{
+            if(NetworkActivityIndicatorManagment.isInternetAvailable()){
+                if(!rv.askInAppPurschaseVC!.canNotBuyView.isHidden){
+                    rv.askInAppPurschaseVC?.hideCanNotBuyView()
+                    rv.askInAppPurschaseVC?.loadProductsAndDisplayIfNotPurchased()
+                }
+            }
+        }
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    }
+    
+    func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+        if let navigationController = controller as? UINavigationController {
+            return topViewController(controller: navigationController.visibleViewController)
+        }
+        if let tabController = controller as? UITabBarController {
+            if let selected = tabController.selectedViewController {
+                return topViewController(controller: selected)
+            }
+        }
+        if let presented = controller?.presentedViewController {
+            return topViewController(controller: presented)
+        }
+        return controller
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
