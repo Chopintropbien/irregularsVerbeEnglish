@@ -252,7 +252,7 @@ class RevisionVerbes: UIViewController {
     func playAudio(){
         
         do {
-            nameAudioFile = verbes[cursor].infinitf()
+            nameAudioFile = verbes[cursor].name()
             audioURL = URL(fileURLWithPath: Bundle.main.path(forResource: nameAudioFile, ofType: formatAudio)!)
             audioPlayer = try! AVAudioPlayer(contentsOf: audioURL, fileTypeHint: nil)
             audioPlayer.play()

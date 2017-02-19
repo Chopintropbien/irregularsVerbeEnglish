@@ -116,7 +116,7 @@ class AskInAppPurschase: UIViewController {
     }
     
     func displayUpperScreen(products: [SKProduct], internetConnection: Bool){
-        if((form == Form.AAA || letter == LetterButton.AB)){
+        if((form == Form.AAA || letter == LetterButton.AB || ((form == nil) && (letter == nil)))){
             self.upperView.isHidden = true
         }
             // product already bought

@@ -6,7 +6,8 @@
 //  Copyright © 2016 Lauriane Mollier. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import AVFoundation
 
 enum Form: String { // 8
     case AAA = "A-A-A"
@@ -83,6 +84,9 @@ class Verbe{
     }
     func preterit() -> String {return verbe.1}
     func parfait() -> String {return verbe.2}
+    
+    
+    func name() -> String {return verbe.0}
     
     func translation(_ lang: Lang) -> String {return translations[lang]!}
 }
@@ -495,6 +499,29 @@ struct Verbes{
             return sortedVerbes.filter({$0.level == level})
         }
     }
+    
+    
+    func testAllAudio(){
+        
+        let formatAudio = "mp3"
+        
+        for v in verbes{
+            do {
+                let nameAudioFile = v.name()
+                let audioURL = URL(fileURLWithPath: Bundle.main.path(forResource: nameAudioFile, ofType: formatAudio)!)
+                let audioPlayer = try! AVAudioPlayer(contentsOf: audioURL, fileTypeHint: nil)
+                audioPlayer.play()
+                audioPlayer.numberOfLoops = Setting.numberLecture() - 1
+                
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            }
+            catch {
+                print(v.infinitf())
+            }
+        }
+    }
+    
+    
     
     
     

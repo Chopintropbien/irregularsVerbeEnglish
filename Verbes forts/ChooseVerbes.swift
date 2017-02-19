@@ -152,9 +152,9 @@ class ChooseVerbes: UIViewController {
             
 //            verbesData.printVerbes()
             
-//            verbesData.witchCategoriesAreNotAvalable()
+            //verbesData.witchCategoriesAreNotAvalable()
             
-//            verbesData.testAllAudio()
+            //verbesData.testAllAudio()
             
             
 //                

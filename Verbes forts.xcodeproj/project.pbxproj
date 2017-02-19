@@ -14,6 +14,7 @@
 		9827BD671DE8A59B00A4912D /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9827BD661DE8A59B00A4912D /* Products.swift */; };
 		9827BD6A1DE9814300A4912D /* BuyLevelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9827BD691DE9814300A4912D /* BuyLevelButton.swift */; };
 		9827BD6E1DE984BA00A4912D /* OrSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9827BD6D1DE984BA00A4912D /* OrSeparator.swift */; };
+		983B52F21E59A025004F820F /* backslide.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 983B52F11E59A025004F820F /* backslide.mp3 */; };
 		983E2D511D9A514600D26E05 /* ChooseLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E2D501D9A514600D26E05 /* ChooseLevel.swift */; };
 		983E2D531D9A59B000D26E05 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E2D521D9A59B000D26E05 /* GlobalSettings.swift */; };
 		984373C41DE9AA5100B2BF1D /* SelectPlusExplainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984373C31DE9AA5100B2BF1D /* SelectPlusExplainButton.swift */; };
@@ -406,6 +407,7 @@
 		986061E81E3D05610051D26A /* NumberRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061E71E3D05610051D26A /* NumberRandom.swift */; };
 		986061F01E3D05AA0051D26A /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061EF1E3D05AA0051D26A /* Help.swift */; };
 		986061F41E3D05CC0051D26A /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986061F31E3D05CC0051D26A /* SettingsTableViewController.swift */; };
+		987E15011E59A2950080C9B6 /* string.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 987E15001E59A2950080C9B6 /* string.mp3 */; };
 		988DC7F91DFC23BD00F28B79 /* BasicLabelBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988DC7F81DFC23BD00F28B79 /* BasicLabelBig.swift */; };
 		98999E871DE32EB400C50B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98999E861DE32EB400C50B56 /* Main.storyboard */; };
 		98999E891DE3338C00C50B56 /* AskInAppPurschase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98999E881DE3338C00C50B56 /* AskInAppPurschase.swift */; };
@@ -454,6 +456,7 @@
 		9827BD661DE8A59B00A4912D /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		9827BD691DE9814300A4912D /* BuyLevelButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyLevelButton.swift; sourceTree = "<group>"; };
 		9827BD6D1DE984BA00A4912D /* OrSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrSeparator.swift; sourceTree = "<group>"; };
+		983B52F11E59A025004F820F /* backslide.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backslide.mp3; sourceTree = "<group>"; };
 		983E2D501D9A514600D26E05 /* ChooseLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseLevel.swift; sourceTree = "<group>"; };
 		983E2D521D9A59B000D26E05 /* GlobalSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		984373C31DE9AA5100B2BF1D /* SelectPlusExplainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPlusExplainButton.swift; sourceTree = "<group>"; };
@@ -848,6 +851,7 @@
 		986061E71E3D05610051D26A /* NumberRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberRandom.swift; sourceTree = "<group>"; };
 		986061EF1E3D05AA0051D26A /* Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
 		986061F31E3D05CC0051D26A /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		987E15001E59A2950080C9B6 /* string.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = string.mp3; sourceTree = "<group>"; };
 		988A55881E3CF5AC00FB8262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		988DC7F81DFC23BD00F28B79 /* BasicLabelBig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicLabelBig.swift; sourceTree = "<group>"; };
 		98999E861DE32EB400C50B56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -970,6 +974,7 @@
 				98592B701E029D8D00E61F90 /* abide.mp3 */,
 				98592B711E029D8D00E61F90 /* arise.mp3 */,
 				98592B721E029D8D00E61F90 /* awake.mp3 */,
+				983B52F11E59A025004F820F /* backslide.mp3 */,
 				98592B731E029D8D00E61F90 /* be.mp3 */,
 				98592B741E029D8D00E61F90 /* bear.mp3 */,
 				98592B751E029D8D00E61F90 /* beat.mp3 */,
@@ -1265,6 +1270,7 @@
 				98592C971E029D8F00E61F90 /* strew.mp3 */,
 				98592C981E029D8F00E61F90 /* stride.mp3 */,
 				98592C991E029D8F00E61F90 /* strike.mp3 */,
+				987E15001E59A2950080C9B6 /* string.mp3 */,
 				98592C9A1E029D8F00E61F90 /* strive.mp3 */,
 				98592C9B1E029D8F00E61F90 /* sublet.mp3 */,
 				98592C9C1E029D8F00E61F90 /* sunburn.mp3 */,
@@ -1582,6 +1588,7 @@
 				98592DE21E029D9100E61F90 /* say.mp3 in Resources */,
 				98592D951E029D9000E61F90 /* oversee.mp3 in Resources */,
 				98592D6F1E029D9000E61F90 /* outdrive.mp3 in Resources */,
+				983B52F21E59A025004F820F /* backslide.mp3 in Resources */,
 				98592CEB1E029D9000E61F90 /* abide.mp3 in Resources */,
 				98592D1F1E029D9000E61F90 /* feel.mp3 in Resources */,
 				98592E271E029D9100E61F90 /* throw.mp3 in Resources */,
@@ -1666,6 +1673,7 @@
 				98592E361E029D9100E61F90 /* underspend.mp3 in Resources */,
 				98592DEC1E029D9100E61F90 /* shed.mp3 in Resources */,
 				98592D561E029D9000E61F90 /* mean.mp3 in Resources */,
+				987E15011E59A2950080C9B6 /* string.mp3 in Resources */,
 				98592DA21E029D9000E61F90 /* partake.mp3 in Resources */,
 				98592DEE1E029D9100E61F90 /* shit.mp3 in Resources */,
 				98592E521E029D9100E61F90 /* wind.mp3 in Resources */,
